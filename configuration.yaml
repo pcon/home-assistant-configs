@@ -5,7 +5,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: imperial
   time_zone: America/New_York
-  customize: !include customize.yaml
+  customize: !include_dir_merge_named customizations
 
 frontend:
 config:
@@ -29,6 +29,6 @@ camera: !include_dir_merge_list cameras
 sensor: !include_dir_merge_list sensors
 cover: !include_dir_merge_list covers
 group: !include_dir_named groups
-automation: !include_dir_list automation
+automation: !include_dir_list automations
 media_player: !include_dir_merge_list media_players
 script: !include scripts.yaml

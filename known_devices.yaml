@@ -3,7 +3,7 @@ pcon:
         mac: 5c:70:a3:25:64:76
         picture: https://en.gravatar.com/userimage/12439101/7f256edc4d122d9456d739ff8395de1b.jpg
         track: true
-        hide_if_away: true
+        hide_if_away: false
 
 beth:
         name: Beth
@@ -205,3 +205,12 @@ patricksair:
   picture:
   track: false
   vendor: Apple, Inc.
+
+gainspanb615f3:
+  hide_if_away: false
+  icon:
+  mac: 20:F8:5E:B6:15:F3
+  name: GainSpanb615f3
+  picture:
+  track: false
+  vendor: Delta Electronics

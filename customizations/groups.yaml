@@ -1,0 +1,10 @@
+group.default_view:
+  order: 1
+group.people:
+  order: 2
+group.garage:
+  order: 3
+group.other:
+  order: 4
+group.automation:
+  order: 5

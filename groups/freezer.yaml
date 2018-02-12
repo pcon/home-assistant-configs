@@ -1,0 +1,4 @@
+name: Freezer
+view: no
+entities:
+  - sensor.freezer

@@ -1,0 +1,3 @@
+sensor.freezer:
+  friendly_name: Freezer
+  icon: mdi:thermometer
