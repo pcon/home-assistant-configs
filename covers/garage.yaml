@@ -1,0 +1,18 @@
+- platform: mqtt
+  name: "Garage Right"
+  device_class: "garage"
+  state_topic: "garage/right/state"
+  qos: 0
+  retain: true
+  state_open: "open"
+  state_closed: "closed"
+  optimistic: false
+- platform: mqtt
+  name: "Garage Left"
+  device_class: "garage"
+  state_topic: "garage/left/state"
+  qos: 0
+  retain: true
+  state_open: "open"
+  state_closed: "closed"
+  optimistic: false

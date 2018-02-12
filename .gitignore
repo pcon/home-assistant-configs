@@ -1,0 +1,7 @@
+plex.conf
+secrets.yaml
+*.log
+*.db
+.HA_VERSION
+.cloud/*.*
+.uuid

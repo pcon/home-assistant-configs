@@ -1,0 +1,6 @@
+- platform: foscam
+  name: "Driveway"
+  ip: !secret camera_driveway_host
+  port: !secret camera_driveway_port
+  username: !secret camera_driveway_user
+  password: !secret camera_driveway_pass

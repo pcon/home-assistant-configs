@@ -1,0 +1,9 @@
+- platform: plex
+  host: !secret server_host
+  port: 32400
+  name: 'Plex'
+  username: !secret plex_user
+  password: !secret plex_pass
+  server: deadlypenguin
+  token: !secret plex_token
+  ssl: false

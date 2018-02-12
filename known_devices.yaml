@@ -1,0 +1,207 @@
+pcon:
+        name: Patrick
+        mac: 5c:70:a3:25:64:76
+        picture: https://en.gravatar.com/userimage/12439101/7f256edc4d122d9456d739ff8395de1b.jpg
+        track: true
+        hide_if_away: true
+
+beth:
+        name: Beth
+        mac: ac:0d:1b:f2:07:76
+        picture: https://scontent-atl3-1.cdninstagram.com/vp/435724a8d392e0bc7f66349c7dd7579d/5B17B2DB/t51.2885-19/s150x150/21107719_268930546954656_5535135207184662528_a.jpg
+        track: true
+        hide_if_away: false
+
+kathy:
+          hide_if_away: true
+          mac: 44:80:EB:7E:5B:0F
+          name: Kathy 
+          picture: https://lh3.googleusercontent.com/Nqn1h6qp6QnUIeNyKTLCA9moWXGA8mQBDDz4q1hqkcSH_3KHUc7puUYnuv9Yc9mbjvrLCuyqCStGOhQ3a1fHfEVrMTlA7boeDBNeqoLbRCYEw2IEoJHngXrOg_crxnicypfKYcJT4uBAf91PU5SK3sObvDhgdMXhRHfkN7rCkfhcXA53cKa-KvV2XfWHDB7U13wsdjlfexs6CW1IzBdRBqRX1_y3zykR5M8cjS6i3zPs4aIGT8jaFR1xCA4T5VmxBaw0P_TjnHTqBNseSIgMXmLOHnDFgOSm-5_sHbii-XdsGgKpIMeh8T_9A_O_Pe147VfcURvjEPjsOn_QpeVJkD985DFDh8si60yUcp-8HFHpP8-0iOFUhraPX8p6luIjdRVj3XdI5hRvsR_TxhmIKzYwxuQoh0YKIVpJX2nHu8ZS2uNKwVRKF8CqWwWG-SS5E-wBdHCwVX-TO7dUZbFWkmRdqyHxY4tqmzYn-iuziechV9-MTNsOv2sSY8-FY7uog2xVsJG9Cw-VGecY_l6hqoqPVJiffMljqpkBYDLWzEU1o4X1gNkRtQJrh5LPp0TJ9gDkG890l6Xot5VBR7aNg8y8X6ofqUFBaZ-fYv3Y=s713-no
+          track: true
+
+richard:
+          hide_if_away: true
+          mac: CC:61:E5:3B:48:CE
+          name: Richard
+          picture: https://lh3.googleusercontent.com/K27Ft4R-hcbGDme1fKF6m20yA_5TTQ3wGGVoa28yAJh1qV6YtIm1j8k9zmbER44Zmqr0Dhte7sNFNeemXYxkj7PpUiq2wztodQtaZjQa4zes6Jucx84It-SUSY-q8opXs_W6LTTC-6RKbKrtIz_AAZo-w--idRiMID0osPN15hzXA-qfZ9m60hO6xw-ZFKt33MFZv8J6KaknaR6OxNrGca9F7S5TQWqRbrfwJ9f3KzOd3ly-O7OETu0Pu7jIv0JgZo_p0_oMpixfyu40tHkwYHWFPBgrsAXEuKkk-NXMQYRbsMUM6Eew0jrNO99FYEfV8AK9Wc4IBenbrwSx-2Nyh4rOnKOqB_lRkJVPMxNqkt1BMFhYfQK-XHNE6arH1dIFl11ttkJ7dOuG7OskpUWThaBOzxc5iso-JpMUfHHm-gubWQQijy9T4SmhrIFDj2OGw83_P9Lug6dD-XOoGPzXkPA6up5ml6vzpJX2JcFYukLixWBQXJP1YZlrh1ki_w_V0oDnMEL14xdb4lZ6RLoHDMNlxPmgp_rf5y1EUmeYtjqATZQVfiUxoh3pRUGPhNict3WKE5eVvGaPEqIjGu6LsFvnTSVmJ-fUVKdmbhu6=s713-no
+          track: true
+
+garage_camera:
+  hide_if_away: false
+  icon:
+  mac: 44:2C:05:AF:7A:85
+  name: Garage Camera
+  picture:
+  track: false
+  vendor: AMPAK Technology, Inc.
+
+amazon__dot_beth:
+  hide_if_away: false
+  icon:
+  mac: 40:B4:CD:C6:AD:6B
+  name: Amazon - Dot Beth
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+78617caf52f1:
+  hide_if_away: false
+  icon:
+  mac: 78:61:7C:AF:52:F1
+  name: 78617caf52f1
+  picture:
+  track: false
+  vendor: MITSUMI ELECTRIC CO.,LTD.
+
+amazon__fire_bennett:
+  hide_if_away: false
+  icon:
+  mac: 50:F5:DA:13:71:24
+  name: Amazon - Fire Bennett
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+chromecast:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:55:2D:54
+  name: Chromecast
+  picture:
+  track: false
+  vendor: AzureWave Technology Inc.
+
+driveway_camera:
+  hide_if_away: false
+  icon:
+  mac: E8:AB:FA:9D:BF:53
+  name: Driveway Camera
+  picture:
+  track: false
+  vendor: Shenzhen Reecam Tech.Ltd.
+
+electric_imp:
+  hide_if_away: false
+  icon:
+  mac: 0C:2A:69:00:48:C8
+  name: Electric Imp
+  picture:
+  track: false
+  vendor: electric imp, incorporated
+
+printer:
+  hide_if_away: false
+  icon:
+  mac: 30:CD:A7:FD:A8:DC
+  name: Printer
+  picture:
+  track: false
+  vendor: Samsung Electronics Co.,Ltd
+
+e04f43052174:
+  hide_if_away: false
+  icon:
+  mac: E0:4F:43:05:21:74
+  name: e04f43052174
+  picture:
+  track: false
+  vendor: Universal Global Scientific Industrial Co., Ltd.
+
+roku__beth:
+  hide_if_away: false
+  icon:
+  mac: 88:DE:A9:63:C8:7F
+  name: Roku - Beth
+  picture:
+  track: false
+  vendor: Roku, Inc.
+
+amazon__firetv:
+  hide_if_away: false
+  icon:
+  mac: 0C:47:C9:A0:AE:78
+  name: Amazon - FireTv
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+roku__bedroom:
+  hide_if_away: false
+  icon:
+  mac: DC:3A:5E:7E:DA:53
+  name: Roku - Bedroom
+  picture:
+  track: false
+  vendor: Roku, Inc.
+
+bennett_camera:
+  hide_if_away: false
+  icon:
+  mac: E8:AB:FA:0A:B6:0A
+  name: Bennett Camera
+  picture:
+  track: false
+  vendor: Shenzhen Reecam Tech.Ltd.
+
+amazon__dot_patrick:
+  hide_if_away: false
+  icon:
+  mac: 68:54:FD:C8:6E:62
+  name: Amazon - Dot Patrick
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+chromecast_2:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:53:DF:09
+  name: Chromecast
+  picture:
+  track: false
+  vendor: AzureWave Technology Inc.
+
+080028741845:
+  hide_if_away: false
+  icon:
+  mac: 08:00:28:74:18:45
+  name: 080028741845
+  picture:
+  track: false
+  vendor: Texas Instruments
+
+amazon__alexa_kitchen:
+  hide_if_away: false
+  icon:
+  mac: 50:F5:DA:DB:CE:87
+  name: Amazon - Alexa Kitchen
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+nintendo_3ds:
+  hide_if_away: false
+  icon:
+  mac: 04:03:D6:6E:4B:9E
+  name: Nintendo 3DS
+  picture:
+  track: false
+  vendor: Nintendo Co.,Ltd
+
+nintendo_wii_u:
+  hide_if_away: false
+  icon:
+  mac: 9C:E6:35:16:58:97
+  name: Nintendo Wii U
+  picture:
+  track: false
+  vendor: Nintendo Co., Ltd.
+
+patricksair:
+  hide_if_away: false
+  icon:
+  mac: 9C:F3:87:C9:E5:C0
+  name: Patricks-Air
+  picture:
+  track: false
+  vendor: Apple, Inc.

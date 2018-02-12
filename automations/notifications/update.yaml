@@ -1,0 +1,11 @@
+alias: Update notifications
+trigger:
+        - platform: state
+          entity_id: updater.updater
+action:
+        service: notify.pushover
+        data:
+                message: 'There is a new Home Assistant release available'
+                title: 'Home Assistant'
+                data:
+                        url: !secret http_host

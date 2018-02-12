@@ -1,0 +1,34 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+frontend:
+config:
+
+http:
+  base_url: assist.deadlypenguin.com:80
+  api_password: !secret http_pass
+
+updater:
+#discovery:
+hassio:
+history:
+logbook:
+tts:
+  - platform: google
+cloud:
+
+notify: !include notify.yaml
+device_tracker: !include device_tracker.yaml
+camera: !include_dir_merge_list cameras
+sensor: !include_dir_merge_list sensors
+cover: !include_dir_merge_list covers
+group: !include_dir_named groups
+automation: !include_dir_list automation
+media_player: !include_dir_merge_list media_players
+script: !include scripts.yaml

@@ -1,0 +1,5 @@
+view: yes
+entities:
+        - cover.garage_left
+        - cover.garage_right
+        - sensor.freezer
