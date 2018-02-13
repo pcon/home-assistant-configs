@@ -1,0 +1,6 @@
+view: no
+name: Deluge
+entities:
+  - sensor.deluge_status
+  - sensor.deluge_down_speed
+  - sensor.deluge_up_speed

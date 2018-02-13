@@ -1,0 +1,9 @@
+sensor.deluge_status:
+  friendly_name: Status
+  icon: mdi:pulse
+sensor.deluge_down_speed:
+  friendly_name: Download
+  icon: mdi:arrow-down-bold
+sensor.deluge_up_speed:
+  friendly_name: Upload
+  icon: mdi:arrow-up-bold

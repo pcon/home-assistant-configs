@@ -2,9 +2,11 @@ group.default_view:
   order: 1
 group.people:
   order: 2
-group.garage:
+group.server:
   order: 3
-group.other:
+group.garage:
   order: 4
-group.automation:
+group.other:
   order: 5
+group.automation:
+  order: 6

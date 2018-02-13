@@ -1,0 +1,6 @@
+view: yes
+icon: mdi:desktop-mac
+entities:
+  - group.deluge
+  - group.sonarr
+  - group.sabnzb

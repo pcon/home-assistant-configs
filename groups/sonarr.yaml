@@ -1,0 +1,4 @@
+view: no
+name: Sonarr
+entities:
+  - sensor.sonarr_upcoming

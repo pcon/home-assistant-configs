@@ -1,0 +1,7 @@
+- platform: sonarr
+  host: !secret sonarr_host
+  port: !secret sonarr_port
+  api_key: !secret sonarr_api
+  monitored_conditions:
+    - upcoming
+  days: 7
