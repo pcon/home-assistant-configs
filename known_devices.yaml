@@ -214,3 +214,66 @@ gainspanb615f3:
   picture:
   track: false
   vendor: Delta Electronics
+
+f04f7c662bfa:
+  hide_if_away: false
+  icon:
+  mac: F0:4F:7C:66:2B:FA
+  name: f04f7c662bfa
+  picture:
+  track: false
+  vendor: unknown
+
+androidaf9073d0c03cbace:
+  hide_if_away: false
+  icon:
+  mac: 5C:AF:06:4D:8B:31
+  name: android-af9073d0c03cbace
+  picture:
+  track: false
+  vendor: LG Electronics (Mobile Communications)
+
+androidf88045dc71359e4a:
+  hide_if_away: false
+  icon:
+  mac: FC:2D:5E:B9:81:A1
+  name: android-f88045dc71359e4a
+  picture:
+  track: false
+  vendor: zte corporation
+
+desktopp85jb2p:
+  hide_if_away: false
+  icon:
+  mac: 3C:F8:62:7B:EA:4E
+  name: DESKTOP-P85JB2P
+  picture:
+  track: false
+  vendor: unknown
+
+samsungsmg920v:
+  hide_if_away: false
+  icon:
+  mac: 90:B6:86:BD:1E:BB
+  name: SAMSUNG-SM-G920V
+  picture:
+  track: false
+  vendor: Murata Manufacturing Co., Ltd.
+
+e04f4320d0e3:
+  hide_if_away: false
+  icon:
+  mac: E0:4F:43:20:D0:E3
+  name: e04f4320d0e3
+  picture:
+  track: false
+  vendor: Universal Global Scientific Industrial Co., Ltd.
+
+hs105:
+  hide_if_away: false
+  icon:
+  mac: B0:4E:26:1B:31:32
+  name: HS105
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.

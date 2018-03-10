@@ -1,4 +1,5 @@
 view: yes
+icon: mdi:garage
 entities:
   - cover.garage_left
   - cover.garage_right

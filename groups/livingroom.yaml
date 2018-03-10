@@ -1,0 +1,4 @@
+view: yes
+icon: mdi:television-classic
+entities:
+  - switch.scooter

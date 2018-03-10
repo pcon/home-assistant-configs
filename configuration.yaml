@@ -27,6 +27,7 @@ notify: !include notify.yaml
 device_tracker: !include device_tracker.yaml
 camera: !include_dir_merge_list cameras
 sensor: !include_dir_merge_list sensors
+switch: !include_dir_merge_list switches
 cover: !include_dir_merge_list covers
 group: !include_dir_named groups
 automation: !include_dir_list automations

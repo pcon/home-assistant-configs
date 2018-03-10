@@ -1,0 +1,4 @@
+view: no
+name: Packages
+entities:
+  - sensor.ups

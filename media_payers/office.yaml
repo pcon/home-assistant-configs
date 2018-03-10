@@ -1,0 +1,3 @@
+- platform: cast
+  name: "Chromecast Office"
+  host: !secret cast_office_host
