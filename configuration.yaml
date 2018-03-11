@@ -22,6 +22,7 @@ logbook:
 tts:
   - platform: google
 cloud:
+mqtt:
 
 notify: !include notify.yaml
 device_tracker: !include device_tracker.yaml

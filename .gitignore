@@ -2,6 +2,7 @@ plex.conf
 secrets.yaml
 *.log
 *.db
+*.db-*
 .HA_VERSION
 .cloud/*.*
 .uuid

@@ -1,0 +1,44 @@
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/1"
+  name: "Crawlspace 1 temperature"
+  unit_of_measurement: "°F"
+  value_template: "{{ value_json.temp }}"
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/1"
+  name: "Crawlspace 1 humidity"
+  unit_of_measurement: "%"
+  value_template: "{{ value_json.hum }}"
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/2"
+  name: "Crawlspace 2 temperature"
+  unit_of_measurement: "°F"
+  value_template: "{{ value_json.temp }}"
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/2"
+  name: "Crawlspace 2 humidity"
+  unit_of_measurement: "%"
+  value_template: "{{ value_json.hum }}"
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/3"
+  name: "Crawlspace 3 temperature"
+  unit_of_measurement: "°F"
+  value_template: "{{ value_json.temp }}"
+- platform: mqtt
+  state_topic: "home-assistant/sensor/crawlspace/3"
+  name: "Crawlspace 3 humidity"
+  unit_of_measurement: "%"
+  value_template: "{{ value_json.hum }}"
+- platform: min_max 
+  name: "Crawlspace humidity"
+  type: mean
+  entity_ids:
+    - sensor.crawlspace_1_humidity
+    - sensor.crawlspace_2_humidity
+    - sensor.crawlspace_3_humidity
+- platform: min_max 
+  name: "Crawlspace temperature"
+  type: mean
+  entity_ids:
+    - sensor.crawlspace_1_temperature
+    - sensor.crawlspace_2_temperature
+    - sensor.crawlspace_3_temperature
