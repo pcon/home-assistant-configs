@@ -32,4 +32,4 @@ cover: !include_dir_merge_list covers
 group: !include_dir_named groups
 automation: !include_dir_list automations
 media_player: !include_dir_merge_list media_players
-script: !include scripts.yaml
+script: !include_dir_named scripts

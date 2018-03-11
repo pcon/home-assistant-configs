@@ -1,0 +1,8 @@
+alias: "Turn off scooter and alert"
+sequence:
+  - service: switch.turn_off
+    entity_id: switch.scooter
+  - service: notify.pushover
+    data:
+      message: "Turned off scooter"
+      title: "Turned off scooter"

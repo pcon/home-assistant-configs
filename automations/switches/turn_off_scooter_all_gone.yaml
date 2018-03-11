@@ -10,9 +10,4 @@ condition:
     entity_id: switch.scooter
     state: 'on'
 action:
-  - service: switch.turn_off
-    entity_id: switch.scooter
-  - service: notify.pushover
-    data:
-      message: "Turned off scooter"
-      title: "Turned off scooter"
+  - service: script.turn_off_scooter_and_alert
