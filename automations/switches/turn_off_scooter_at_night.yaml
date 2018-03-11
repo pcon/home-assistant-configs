@@ -1,0 +1,15 @@
+alias: "Turn off scooter warmer at night"
+trigger:
+  - platform: time
+    at: '22:00:00'
+condition:
+    condition: state
+    entity_id: switch.scooter
+    state: 'on'
+action:
+  - service: switch.turn_off
+    entity_id: switch.scooter
+  - service: notify.pushover
+    data:
+      message: "Turned off scooter"
+      title: "Turned off scooter"

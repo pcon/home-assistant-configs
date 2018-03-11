@@ -1,0 +1,18 @@
+alias: "Turn off scooter warmer when everyone leaves"
+trigger:
+  - platform: state
+    entity_id: group.all_devices
+    to: 'not_home'
+    for:
+      minutes: 10
+condition:
+    condition: state
+    entity_id: switch.scooter
+    state: 'on'
+action:
+  - service: switch.turn_off
+    entity_id: switch.scooter
+  - service: notify.pushover
+    data:
+      message: "Turned off scooter"
+      title: "Turned off scooter"
