@@ -1,6 +1,8 @@
 view: yes
 icon: mdi:garage
 entities:
+  - group.packages
   - cover.garage_left
   - cover.garage_right
   - group.freezer
+  - group.crawlspace

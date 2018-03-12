@@ -4,11 +4,7 @@ group.people:
   order: 2
 group.server:
   order: 3
-group.garage:
+group.exterior:
   order: 4
 group.livingroom:
   order: 5
-group.other:
-  order: 6
-group.automation:
-  order: 7

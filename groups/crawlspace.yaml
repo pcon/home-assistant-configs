@@ -1,0 +1,11 @@
+name: Crawlspace
+view: no
+entities:
+  - sensor.crawlspace_humidity
+  - sensor.crawlspace_temperature
+  - sensor.crawlspace_1_humidity
+  - sensor.crawlspace_1_temperature
+  - sensor.crawlspace_2_humidity
+  - sensor.crawlspace_2_temperature
+  - sensor.crawlspace_3_humidity
+  - sensor.crawlspace_3_temperature

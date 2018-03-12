@@ -1,6 +1,7 @@
 view: yes
-icon: mdi:desktop-mac
+icon: mdi:server
 entities:
+  - group.internet
   - group.deluge
   - group.sonarr
   - group.sabnzb

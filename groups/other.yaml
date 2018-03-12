@@ -1,4 +1,0 @@
-view: yes
-entities:
-  - group.internet
-  - group.packages
