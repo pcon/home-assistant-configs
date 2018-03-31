@@ -8,3 +8,4 @@ secrets.yaml
 .uuid
 *.sqlite
 *.pickle
+OZW_Log.txt

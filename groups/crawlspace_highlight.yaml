@@ -1,5 +1,6 @@
 name: Crawlspace
 view: no
 entities:
+  - sensor.external_temperature
   - sensor.crawlspace_humidity
   - sensor.crawlspace_temperature

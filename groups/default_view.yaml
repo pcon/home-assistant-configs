@@ -3,5 +3,6 @@ icon: mdi:home
 entities:
   - device_tracker.pcon
   - device_tracker.beth
+  - group.exterior_cameras
   - group.freezer
   - group.crawlspace_highlight

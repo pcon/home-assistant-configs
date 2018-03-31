@@ -24,13 +24,18 @@ tts:
 cloud:
 mqtt:
 
-notify: !include notify.yaml
+zwave:
+  usb_path: /dev/ttyACM0
+
+automation: !include_dir_list automations
+#camera: !include_dir_merge_list cameras
+camera: !include cameras.yaml
+cover: !include_dir_merge_list covers
 device_tracker: !include device_tracker.yaml
-camera: !include_dir_merge_list cameras
+group: !include_dir_named groups
+media_player: !include_dir_merge_list media_players
+notify: !include notify.yaml
+octoprint: !include octoprint.yaml
+script: !include_dir_named scripts
 sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
-cover: !include_dir_merge_list covers
-group: !include_dir_named groups
-automation: !include_dir_list automations
-media_player: !include_dir_merge_list media_players
-script: !include_dir_named scripts

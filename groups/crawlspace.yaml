@@ -9,3 +9,6 @@ entities:
   - sensor.crawlspace_2_temperature
   - sensor.crawlspace_3_humidity
   - sensor.crawlspace_3_temperature
+  - sensor.external_temperature
+  - sensor.external_1_temperature
+  - sensor.external_2_temperature

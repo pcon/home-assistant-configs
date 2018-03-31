@@ -277,3 +277,66 @@ hs105:
   picture:
   track: false
   vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+ac63be4a92fc:
+  hide_if_away: false
+  icon:
+  mac: AC:63:BE:4A:92:FC
+  name: ac63be4a92fc
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+nintendo_3ds_2:
+  hide_if_away: false
+  icon:
+  mac: B8:AE:6E:42:79:78
+  name: Nintendo 3DS
+  picture:
+  track: false
+  vendor: Nintendo Co., Ltd.
+
+gsound:
+  hide_if_away: false
+  icon:
+  mac: 10:02:B5:38:CE:76
+  name: gsound
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+octopi:
+  hide_if_away: false
+  icon:
+  mac: 00:0F:60:01:01:6F
+  name: octopi
+  picture:
+  track: false
+  vendor: Lifetron Co.,Ltd
+
+elizabehsiphone:
+  hide_if_away: false
+  icon:
+  mac: 78:9F:70:3E:D2:38
+  name: ElizabehsiPhone
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+patricksair_2:
+  hide_if_away: false
+  icon:
+  mac: 10:40:F3:8B:F7:78
+  name: Patricks-Air
+  picture:
+  track: false
+  vendor: unknown
+
+gracesiphone:
+  hide_if_away: false
+  icon:
+  mac: 84:41:67:6E:13:F3
+  name: Graces-Iphone
+  picture:
+  track: false
+  vendor: Apple, Inc.

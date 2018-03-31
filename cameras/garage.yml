@@ -1,6 +1,0 @@
-- platform: foscam
-  name: "Garage"
-  ip: !secret camera_garage_host
-  port: !secret camera_garage_port
-  username: !secret camera_garage_user
-  password: !secret camera_garage_pass

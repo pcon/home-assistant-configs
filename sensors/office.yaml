@@ -1,0 +1,7 @@
+- platform: rest
+  name: 'IP Address'
+  json_attributes:
+          - ip
+  retain: true
+  value_template: "{{ value_json.ip }}"
+  resource: https://api.ipify.org?format=json

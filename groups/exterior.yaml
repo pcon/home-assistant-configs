@@ -4,5 +4,6 @@ entities:
   - group.packages
   - cover.garage_left
   - cover.garage_right
+  - group.exterior_cameras
   - group.freezer
   - group.crawlspace

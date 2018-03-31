@@ -1,0 +1,5 @@
+name: Exterior Cameras 
+view: no
+entities:
+  - camera.garage
+  - camera.driveway

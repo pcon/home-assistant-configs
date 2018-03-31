@@ -1,3 +1,12 @@
+sensor.external_temperature:
+  friendly_name: External Temperature
+  icon: mdi:thermometer
+sensor.external_1_temperature:
+  friendly_name: External Temperature (1)
+  icon: mdi:thermometer
+sensor.external_2_temperature:
+  friendly_name: External Temperature (2)
+  icon: mdi:thermometer
 sensor.crawlspace_temperature:
   friendly_name: Crawlspace Temperature
   icon: mdi:thermometer
