@@ -340,3 +340,21 @@ gracesiphone:
   picture:
   track: false
   vendor: Apple, Inc.
+
+galaxynote8:
+  hide_if_away: false
+  icon:
+  mac: A0:C9:A0:85:27:EB
+  name: Galaxy-Note8
+  picture:
+  track: false
+  vendor: Murata Manufacturing Co., Ltd.
+
+galaxynote8_2:
+  hide_if_away: false
+  icon:
+  mac: A0:C9:A0:84:7F:48
+  name: Galaxy-Note8
+  picture:
+  track: false
+  vendor: Murata Manufacturing Co., Ltd.

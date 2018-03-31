@@ -1,0 +1,12 @@
+climate.linear_gctbz48_battery_powered_zwave_thermostat_heating_1:
+  name: "Upstaris Heating"
+  platform: zwave
+  unique_id: 2-72057594076774418
+climate.linear_gctbz48_battery_powered_zwave_thermostat_cooling_1:
+  name: "Upstaris Cooling"
+  platform: zwave
+  unique_id: 2-72057594076774434
+sensor.linear_gctbz48_battery_powered_zwave_thermostat_temperature:
+  name: "Upstairs Temperature"
+  platform: zwave
+  unique_id: 2-72057594076479506

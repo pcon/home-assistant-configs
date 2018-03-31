@@ -1,0 +1,6 @@
+sensor.linear_gctbz48_battery_powered_zwave_thermostat_temperature:
+  friendly_name: Temperature
+  icon: mdi:thermometer
+sensor.thermostat_upstairs_state:
+  friendly_name: State
+  icon: mdi:nest-thermostat
