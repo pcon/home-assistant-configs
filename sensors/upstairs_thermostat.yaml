@@ -2,4 +2,4 @@
   sensors:
     thermostat_upstairs_state:
       friendly_name: "State"
-      value_template: "{{ states.climate.linear_gctbz48_battery_powered_zwave_thermostat_cooling_1.attributes.operating_state }}"
+      value_template: "{{ states.climate.upstairs_thermostat_cooling_1.attributes.operating_state }}"

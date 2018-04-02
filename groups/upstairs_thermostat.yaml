@@ -2,4 +2,4 @@ name: Upstairs
 view: no
 entities:
   - sensor.thermostat_upstairs_state
-  - sensor.linear_gctbz48_battery_powered_zwave_thermostat_temperature
+  - sensor.upstairs_thermostat_temperature
