@@ -1,0 +1,36 @@
+alias: "Notify if the right garage door has been opened in the middle of the night"
+trigger:
+  - platform: state
+    entity_id: cover.garage_right 
+    to: 'open'
+condition: or
+  - condition: time
+    after: '22:00:00'
+    weekday:
+      - sun
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+      - sat
+  - condition: time
+    before: '05:00:00'
+    weekday:
+      - sun
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+      - sat
+action:
+  - service: notify.pushover
+    data:
+      message: "Right garage door open"
+      title: "Garage door"
+      data:
+        priority: 2
+        sound: "persistent"
+        expire: 10800
+        retry: 30
