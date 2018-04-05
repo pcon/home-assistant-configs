@@ -3,27 +3,29 @@ trigger:
   - platform: state
     entity_id: cover.garage_right 
     to: 'open'
-condition: or
-  - condition: time
-    after: '22:00:00'
-    weekday:
-      - sun
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
-      - sat
-  - condition: time
-    before: '05:00:00'
-    weekday:
-      - sun
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
-      - sat
+condition:
+  condition: or
+  conditions:
+    - condition: time
+      after: '22:00:00'
+      weekday:
+        - sun
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+        - sat
+    - condition: time
+      before: '05:00:00'
+      weekday:
+        - sun
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+        - sat
 action:
   - service: notify.pushover
     data:

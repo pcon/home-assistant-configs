@@ -1,0 +1,5 @@
+name: Downstairs
+view: no
+entities:
+  - sensor.thermostat_downstairs_state
+  - sensor.downstairs_thermostat_temperature

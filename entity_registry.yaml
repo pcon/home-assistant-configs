@@ -1,12 +1,24 @@
 climate.upstairs_thermostat_heating_1:
-  name: "Upstaris Heating"
+  name: Upstaris Heating
   platform: zwave
   unique_id: 2-72057594076774418
 climate.upstairs_thermostat_cooling_1:
-  name: "Upstaris Cooling"
+  name: Upstairs Cooling
   platform: zwave
   unique_id: 2-72057594076774434
 sensor.upstairs_thermostat_temperature:
-  name: "Upstairs Temperature"
+  name: Upstairs Temperature
   platform: zwave
   unique_id: 2-72057594076479506
+climate.downstairs_thermostat_heating_1:
+  name: Downstairs Heating
+  platform: zwave
+  unique_id: 3-72057594093551634
+climate.downstairs_thermostat_cooling_1:
+  name: Downstairs Cooling
+  platform: zwave
+  unique_id: 3-72057594093551650
+sensor.downstairs_thermostat_temperature:
+  name: Downstairs Temperature
+  platform: zwave
+  unique_id: 3-72057594093256722
