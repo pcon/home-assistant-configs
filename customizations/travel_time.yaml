@@ -1,0 +1,9 @@
+sensor.home_to_hospital:
+  friendly_name: Home to Hospital
+  icon: mdi:hospital-building
+sensor.home_to_school:
+  friendly_name: Home to School
+  icon: mdi:school
+sensor.home_to_work:
+  friendly_name: Home to Office
+  icon: mdi:domain

@@ -7,3 +7,4 @@ entities:
   - device_tracker.kathy
   - device_tracker.richard
   - group.soccer
+  - group.travel_time

@@ -1,0 +1,6 @@
+name: Travel Time
+view: no
+entities:
+  - sensor.home_to_school
+  - sensor.home_to_hospital
+  - sensor.home_to_work
