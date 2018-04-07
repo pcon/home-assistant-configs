@@ -3,4 +3,4 @@
   friendly_name: Herbert Akins School Park
   resource: https://www.fuquay-varina.org/359/Facility-Status
   select: .widgetBody table tbody tr:nth-of-type(15) td:nth-of-type(2)
-  value_template: '{{ value }}'
+  value_template: '{{ value.split(" ")[0] }}'
