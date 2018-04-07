@@ -6,3 +6,4 @@ entities:
   - device_tracker.beth
   - device_tracker.kathy
   - device_tracker.richard
+  - group.soccer

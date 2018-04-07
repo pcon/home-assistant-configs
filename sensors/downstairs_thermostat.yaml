@@ -2,4 +2,9 @@
   sensors:
     thermostat_downstairs_state:
       friendly_name: "State"
-      value_template: "{{ states.climate.downstairs_thermostat_cooling_1.attributes.operating_state }}"
+      value_template: >
+        {% if states.climate.downstairs_thermostat_cooling_1 %}
+          {{ states.climate.downstairs_thermostat_cooling_1.attributes.operating_state }}
+        {% else %}
+          Loading
+        {% endif %}

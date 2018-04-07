@@ -1,0 +1,5 @@
+name: Soccer
+view: no
+entities:
+  - sensor.soccer_park_name
+  - sensor.soccer_park

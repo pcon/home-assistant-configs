@@ -1,0 +1,11 @@
+alias: "Soccer park is closed"
+trigger:
+  - platform: state 
+    entity_id: sensor.soccer_park
+    from: 'OPEN'
+    to: 'CLOSED'
+action:
+  - service: notify.pushover
+    data:
+      message: "Soccer park is closed"
+      title: "Soccer park"
