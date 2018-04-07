@@ -7,3 +7,6 @@ sensor.home_to_school:
 sensor.home_to_work:
   friendly_name: Home to Office
   icon: mdi:domain
+sensor.home_to_grandma:
+  friendly_name: Home to Grandma's
+  icon: mdi:home-variant

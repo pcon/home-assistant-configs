@@ -16,3 +16,9 @@
   origin: zone.home 
   destination: !secret latlon_work
   name: home_to_work
+- platform: google_travel_time
+  api_key: !secret google_api
+  scan_interval: 1800
+  origin: zone.home 
+  destination: !secret latlon_grandma
+  name: home_to_grandma
