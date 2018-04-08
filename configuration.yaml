@@ -23,6 +23,10 @@ tts:
   - platform: google
 cloud:
 mqtt:
+  broker: !secret mqtt_host
+  port: !secret mqtt_port
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
 
 zwave:
   usb_path: /dev/ttyACM0
