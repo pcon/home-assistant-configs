@@ -4,6 +4,7 @@ entities:
   - device_tracker.pcon
   - device_tracker.beth
   - group.exterior_cameras
+  - group.weather_highlight
   - group.upstairs_thermostat
   - group.downstairs_thermostat
   - group.freezer

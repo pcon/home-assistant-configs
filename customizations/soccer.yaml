@@ -1,6 +1,9 @@
 group.soccer:
   friendly_name: Soccer
   icon: mdi:soccer
+sensor.soccer:
+  friendly_name: Soccer
+  icon: mdi:soccer
 sensor.soccer_park:
   friendly_name: Status
   icon: mdi:soccer
