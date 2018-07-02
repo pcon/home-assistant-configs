@@ -2,12 +2,22 @@
   state_topic: "home-assistant/sensor/external/1"
   name: "External 1 temperature"
   unit_of_measurement: "°F"
-  value_template: "{{ value_json.temp }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.temp }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/external/2"
   name: "External 2 temperature"
   unit_of_measurement: "°F"
-  value_template: "{{ value_json.temp }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.temp }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: min_max 
   name: "External temperature"
   type: mean

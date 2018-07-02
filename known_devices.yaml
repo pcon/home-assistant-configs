@@ -1,6 +1,6 @@
 pcon:
         name: Patrick
-        mac: 5c:70:a3:25:64:76
+        mac: 80:5a:04:d0:e1:08
         picture: https://en.gravatar.com/userimage/12439101/7f256edc4d122d9456d739ff8395de1b.jpg
         track: true
         hide_if_away: false
@@ -358,3 +358,68 @@ galaxynote8_2:
   picture:
   track: false
   vendor: Murata Manufacturing Co., Ltd.
+
+8c45002ff5bf:
+  hide_if_away: false
+  icon:
+  mac: 8C:45:00:2F:F5:BF
+  name: 8c45002ff5bf
+  picture:
+  track: false
+  vendor: Murata Manufacturing Co., Ltd.
+
+baby_camera:
+  hide_if_away: false
+  icon:
+  mac: E8:AB:FA:9F:F5:75
+  name: Baby Camera
+  picture:
+  track: false
+
+android63ca6f3060074d7c:
+  hide_if_away: false
+  icon:
+  mac: C4:54:44:C6:A9:AD
+  name: android-63ca6f3060074d7c
+  picture:
+  track: false
+
+50f5daceb789:
+  hide_if_away: false
+  icon:
+  mac: 50:F5:DA:CE:B7:89
+  name: 50f5daceb789
+  picture:
+  track: false
+
+samuelsiphone:
+  hide_if_away: false
+  icon:
+  mac: CC:2D:B7:62:5F:6C
+  name: Samuels-iPhone
+  picture:
+  track: false
+
+b4f1dab69020:
+  hide_if_away: false
+  icon:
+  mac: B4:F1:DA:B6:90:20
+  name: b4f1dab69020
+  picture:
+  track: false
+
+60e3acd87b97:
+  hide_if_away: false
+  icon:
+  mac: 60:E3:AC:D8:7B:97
+  name: 60e3acd87b97
+  picture:
+  track: false
+
+48605f2e8a57:
+  hide_if_away: false
+  icon:
+  mac: 48:60:5F:2E:8A:57
+  name: 48605f2e8a57
+  picture:
+  track: false

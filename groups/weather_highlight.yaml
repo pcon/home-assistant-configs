@@ -1,0 +1,6 @@
+name: Weather
+view: no
+entities:
+  - sensor.pws_temp_f
+  - sensor.pws_weather_1d
+  - sensor.pws_weather_1n

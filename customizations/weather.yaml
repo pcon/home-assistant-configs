@@ -1,0 +1,33 @@
+sensor.external_temperature:
+  friendly_name: External Temperature
+  icon: mdi:thermometer
+sensor.external_1_temperature:
+  friendly_name: External Temperature (1)
+  icon: mdi:thermometer
+sensor.external_2_temperature:
+  friendly_name: External Temperature (2)
+  icon: mdi:thermometer
+sensor.crawlspace_temperature:
+  friendly_name: Crawlspace Temperature
+  icon: mdi:thermometer
+sensor.crawlspace_humidity:
+  friendly_name: Crawlspace Humidity
+  icon: mdi:water-percent
+sensor.crawlspace_1_temperature:
+  friendly_name: Crawlspace Temperature (1)
+  icon: mdi:thermometer
+sensor.crawlspace_1_humidity:
+  friendly_name: Crawlspace Humidity (1)
+  icon: mdi:water-percent
+sensor.crawlspace_2_temperature:
+  friendly_name: Crawlspace Temperature (2)
+  icon: mdi:thermometer
+sensor.crawlspace_2_humidity:
+  friendly_name: Crawlspace Humidity (2)
+  icon: mdi:water-percent
+sensor.crawlspace_3_temperature:
+  friendly_name: Crawlspace Temperature (3)
+  icon: mdi:thermometer
+sensor.crawlspace_3_humidity:
+  friendly_name: Crawlspace Humidity (3)
+  icon: mdi:water-percent

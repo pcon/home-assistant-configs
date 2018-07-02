@@ -2,32 +2,62 @@
   state_topic: "home-assistant/sensor/crawlspace/1"
   name: "Crawlspace 1 temperature"
   unit_of_measurement: "°F"
-  value_template: "{{ value_json.temp }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.temp }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/crawlspace/1"
   name: "Crawlspace 1 humidity"
   unit_of_measurement: "%"
-  value_template: "{{ value_json.hum }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.hum }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/crawlspace/2"
   name: "Crawlspace 2 temperature"
   unit_of_measurement: "°F"
-  value_template: "{{ value_json.temp }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.temp }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/crawlspace/2"
   name: "Crawlspace 2 humidity"
   unit_of_measurement: "%"
-  value_template: "{{ value_json.hum }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.hum }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/crawlspace/3"
   name: "Crawlspace 3 temperature"
   unit_of_measurement: "°F"
-  value_template: "{{ value_json.temp }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.temp }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: mqtt
   state_topic: "home-assistant/sensor/crawlspace/3"
   name: "Crawlspace 3 humidity"
   unit_of_measurement: "%"
-  value_template: "{{ value_json.hum }}"
+  value_template: > 
+    {% if value_json %}
+      {{ value_json.hum }}
+    {% else %}
+      Unknown
+    {% endif %}
 - platform: min_max 
   name: "Crawlspace humidity"
   type: mean
