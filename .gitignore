@@ -9,3 +9,4 @@ secrets.yaml
 *.sqlite
 *.pickle
 OZW_Log.txt
+.storage

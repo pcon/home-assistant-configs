@@ -1,13 +1,13 @@
 pcon:
         name: Patrick
-        mac: 80:5a:04:d0:e1:08
+        mac: 48:60:5F:6A:01:FD
         picture: https://en.gravatar.com/userimage/12439101/7f256edc4d122d9456d739ff8395de1b.jpg
         track: true
         hide_if_away: false
 
 beth:
         name: Beth
-        mac: ac:0d:1b:f2:07:76
+        mac: 48:60:5F:6A:70:28
         picture: https://scontent-atl3-1.cdninstagram.com/vp/435724a8d392e0bc7f66349c7dd7579d/5B17B2DB/t51.2885-19/s150x150/21107719_268930546954656_5535135207184662528_a.jpg
         track: true
         hide_if_away: false
@@ -421,5 +421,45 @@ b4f1dab69020:
   icon:
   mac: 48:60:5F:2E:8A:57
   name: 48605f2e8a57
+  picture:
+  track: false
+
+androidc536860b2992ef52:
+  hide_if_away: false
+  icon:
+  mac: 50:32:75:A3:A4:2F
+  name: android-c536860b2992ef52
+  picture:
+  track: false
+
+android72d00e46bc690434:
+  hide_if_away: false
+  icon:
+  mac: 00:90:4C:30:61:1B
+  name: android-72d00e46bc690434
+  picture:
+  track: false
+
+kimberlysiphone:
+  hide_if_away: false
+  icon:
+  mac: 2C:F0:A2:1E:0B:D3
+  name: KimberlysiPhone
+  picture:
+  track: false
+
+android734b403cbd4fb6f7:
+  hide_if_away: false
+  icon:
+  mac: 40:78:6A:61:1F:15
+  name: android-734b403cbd4fb6f7
+  picture:
+  track: false
+
+ac3743de46e2:
+  hide_if_away: false
+  icon:
+  mac: AC:37:43:DE:46:E2
+  name: ac3743de46e2
   picture:
   track: false

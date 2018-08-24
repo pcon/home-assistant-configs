@@ -23,4 +23,3 @@
   type: mean
   entity_ids:
     - sensor.external_1_temperature
-    - sensor.external_2_temperature

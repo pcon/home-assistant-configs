@@ -42,4 +42,5 @@ notify: !include notify.yaml
 octoprint: !include octoprint.yaml
 script: !include_dir_named scripts
 sensor: !include_dir_merge_list sensors
+binary_sensor: !include_dir_merge_list binary_sensors
 switch: !include_dir_merge_list switches
