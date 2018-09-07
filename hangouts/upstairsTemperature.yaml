@@ -1,0 +1,7 @@
+UpstairsTemperature:
+  sentences:
+    - What is the temperature upstairs
+    - 'What is the temperature upstairs?'
+    - upstairs temp
+  conversations:
+    - id: !secret hangouts_pcon

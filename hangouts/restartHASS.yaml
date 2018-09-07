@@ -1,0 +1,5 @@
+RestartHASS:
+  sentences:
+    - restart hass
+  conversations:
+    - id: !secret hangouts_pcon

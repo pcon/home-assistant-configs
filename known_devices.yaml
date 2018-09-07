@@ -463,3 +463,19 @@ ac3743de46e2:
   name: ac3743de46e2
   picture:
   track: false
+
+androidaa0766063f225c02:
+  hide_if_away: false
+  icon:
+  mac: FC:DB:B3:6F:7F:FB
+  name: android-aa0766063f225c02
+  picture:
+  track: false
+
+104e895a3bfd:
+  hide_if_away: false
+  icon:
+  mac: 10:4E:89:5A:3B:FD
+  name: 104e895a3bfd
+  picture:
+  track: false

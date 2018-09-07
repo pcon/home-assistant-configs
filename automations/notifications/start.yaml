@@ -1,0 +1,8 @@
+alias: Startup Notification
+trigger:
+  - platform: homeassistant
+    event: start
+action:
+  service: notify.hangouts_pcon
+  data:
+    message: 'Home Assistant has started'

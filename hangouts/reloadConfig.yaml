@@ -1,0 +1,5 @@
+ReloadConfig:
+  sentences:
+    - reload config
+  conversations:
+    - id: !secret hangouts_pcon

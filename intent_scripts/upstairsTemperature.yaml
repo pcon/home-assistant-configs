@@ -1,0 +1,5 @@
+UpstairsTemperature:
+  speech:
+    type: plain
+    text: >
+      The current temperature upstairs is {{ states.sensor.upstairs_thermostat_temperature.state }}°F

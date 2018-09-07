@@ -2,3 +2,7 @@
   platform: pushover
   api_key: !secret pushover_api
   user_key: !secret pushover_user
+- name: hangouts_pcon
+  platform: hangouts
+  default_conversations:
+    - id: !secret hangouts_pcon
