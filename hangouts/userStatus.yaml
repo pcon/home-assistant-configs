@@ -1,0 +1,6 @@
+UserStatus:
+  sentences:
+    - Is [user] home {user}
+    - Where is [user] {user}
+  conversations:
+    - id: !secret hangouts_pcon

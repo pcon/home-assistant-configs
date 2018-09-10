@@ -1,0 +1,11 @@
+UserStatus:
+  speech:
+    type: plain
+    text: >
+      {% set output_name = user %}
+      {% if user == "patrick" %}{% set user = "pcon" %}{%- endif %}
+      {% if is_state("device_tracker." + user, "home") %}
+        {{ output_name|title }} is home
+      {%- else -%}
+        {{ output_name|title }} left {{ relative_time(states.device_tracker[user].last_updated) }} ago
+      {%- endif %}
