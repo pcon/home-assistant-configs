@@ -1,0 +1,3 @@
+media_player.office_mpd:
+  friendly_name: Office MPD
+  entity_picture: http://192.168.1.52/cover.jpg

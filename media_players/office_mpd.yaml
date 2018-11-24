@@ -1,0 +1,5 @@
+- platform: mpd
+  host: !secret office_mpd_host
+  port: !secret office_mpd_port
+  password: !secret office_mpd_pass
+  name: Office MPD

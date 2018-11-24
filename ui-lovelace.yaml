@@ -1,0 +1,46 @@
+title: Home
+resources:
+        - url: /local/mini-graph-card/mini-graph-card.js?v=0.0.6
+          type: module
+views:
+        - title: Home 
+          id: home
+          icon: mdi:home
+          cards:
+                  - id: peoplehome
+                    type: entity-filter
+                    entities:
+                            - device_tracker.pcon
+                            - device_tracker.beth
+                    state_filter:
+                            - 'home'
+                            - 'not_home'
+                    card:
+                            type: glance
+                            title: People
+                  - id: freezer
+                    type: "custom:mini-graph-card"
+                    entity: sensor.freezer
+                    height: 100
+                    line_width: 4
+                    font_size: 75
+                    color: '#3498db'
+                  - id: thermostats
+                    type: horizontal-stack
+                    cards:
+                        - type: "custom:mini-graph-card"
+                          entity: sensor.upstairs_thermostat_temperature
+                          height: 100
+                          line_width: 4
+                          font_size: 75
+                          color: '#3498db'
+                        - type: "custom:mini-graph-card"
+                          entity: sensor.downstairs_thermostat_temperature
+                          height: 100
+                          line_width: 4
+                          font_size: 75
+                          color: '#3498db'
+                  - entities: [ scene.downstairs_normal, scene.downstairs_christmas ]
+                    show_header_toggle: true
+                    title: Scenes
+                    type: entities

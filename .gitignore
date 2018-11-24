@@ -10,3 +10,4 @@ secrets.yaml
 *.pickle
 OZW_Log.txt
 .storage
+tts/*.*

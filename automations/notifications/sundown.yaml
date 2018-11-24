@@ -1,0 +1,9 @@
+alias: "Sunset Notification"
+trigger:
+  - platform: sun
+    event: sunset
+    offset: "-00:00:00"
+action:
+  - service: notify.hangouts_pcon
+    data:
+      message: 'Sun Down, Monsters Up!'

@@ -1,0 +1,3 @@
+[submodule "www/mini-graph-card"]
+	path = www/mini-graph-card
+	url = https://github.com/kalkih/mini-graph-card.git

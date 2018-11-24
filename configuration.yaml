@@ -9,11 +9,13 @@ homeassistant:
 
 frontend:
 config:
+recorder:
 
 http:
   base_url: assist.deadlypenguin.com:80
   api_password: !secret http_pass
 
+sun:
 updater:
 #discovery:
 hassio:
@@ -21,7 +23,6 @@ history:
 logbook:
 tts:
   - platform: google
-cloud:
 mqtt:
   broker: !secret mqtt_host
   port: !secret mqtt_port
@@ -31,19 +32,43 @@ mqtt:
 zwave:
   usb_path: /dev/ttyACM0
 
+sabnzbd:
+  api_key: !secret sab_api
+  host: !secret sab_host
+  name: nzb
+  port: !secret sab_port
+  ssl: false
+  sensors:
+    - current_status
+    - speed
+    - queue_size
+    - queue_remaining
+    - disk_size
+    - disk_free
+    - queue_count
+    - day_size
+    - week_size
+    - month_size
+    - total_size
+
 automation: !include_dir_list automations
-#camera: !include_dir_merge_list cameras
+binary_sensor: !include_dir_merge_list binary_sensors
 camera: !include cameras.yaml
 cover: !include_dir_merge_list covers
 device_tracker: !include device_tracker.yaml
 group: !include_dir_named groups
+input_boolean: !include input_boolean.yaml
+intent_script: !include_dir_merge_named intent_scripts
 media_player: !include_dir_merge_list media_players
 notify: !include notify.yaml
 octoprint: !include octoprint.yaml
+scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
 sensor: !include_dir_merge_list sensors
-binary_sensor: !include_dir_merge_list binary_sensors
 switch: !include_dir_merge_list switches
+
 hangouts:
   intents: !include_dir_merge_named hangouts
-intent_script: !include_dir_merge_named intent_scripts
+
+climate:
+  - platform: zwave

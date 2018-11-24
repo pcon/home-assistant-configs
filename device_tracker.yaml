@@ -5,3 +5,8 @@
   port: !secret unifi_port
   verify_ssl: false
   track_new_devices: no
+  monitored_conditions:
+    - essid
+    - hostname
+    - idletime
+    - ap_mac

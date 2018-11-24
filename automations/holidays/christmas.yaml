@@ -1,0 +1,15 @@
+alias: "Christmas Lights"
+trigger:
+  - platform: sun
+    event: sunset
+    offset: "-00:00:00"
+condition:
+  - condition: state
+    entity_id: input_boolean.christmas_setup
+    state: 'on'
+action:
+  - service: scene.turn_on
+    entity_id: scene.downstairs_christmas
+  - service: notify.hangouts_pcon
+    data:
+      message: "It's beginning to look a lot like Christmas"

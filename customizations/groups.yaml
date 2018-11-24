@@ -2,9 +2,11 @@ group.default_view:
   order: 1
 group.people:
   order: 2
-group.server:
+group.downstairs:
   order: 3
-group.exterior:
+group.upstairs:
   order: 4
-group.livingroom:
+group.server:
   order: 5
+group.exterior:
+  order: 6

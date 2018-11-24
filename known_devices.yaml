@@ -1,14 +1,14 @@
 pcon:
         name: Patrick
         mac: 48:60:5F:6A:01:FD
-        picture: https://en.gravatar.com/userimage/12439101/7f256edc4d122d9456d739ff8395de1b.jpg
+        picture: /local/people/pcon.jpg
         track: true
         hide_if_away: false
 
 beth:
         name: Beth
         mac: 48:60:5F:6A:70:28
-        picture: https://scontent-atl3-1.cdninstagram.com/vp/435724a8d392e0bc7f66349c7dd7579d/5B17B2DB/t51.2885-19/s150x150/21107719_268930546954656_5535135207184662528_a.jpg
+        picture: /local/people/beth.jpg
         track: true
         hide_if_away: false
 
@@ -477,5 +477,61 @@ androidaa0766063f225c02:
   icon:
   mac: 10:4E:89:5A:3B:FD
   name: 104e895a3bfd
+  picture:
+  track: false
+
+amazonfde844cca:
+  hide_if_away: false
+  icon:
+  mac: 78:E1:03:B1:6F:F3
+  name: amazon-fde844cca
+  picture:
+  track: false
+
+galaxys8:
+  hide_if_away: false
+  icon:
+  mac: DC:EF:CA:32:FD:63
+  name: Galaxy-S8
+  picture:
+  track: false
+
+7c1e525e9752:
+  hide_if_away: false
+  icon:
+  mac: 7C:1E:52:5E:97:52
+  name: 7c1e525e9752
+  picture:
+  track: false
+
+hs105_2:
+  hide_if_away: false
+  icon:
+  mac: AC:84:C6:A8:1D:50
+  name: HS105
+  picture:
+  track: false
+
+hs105_3:
+  hide_if_away: false
+  icon:
+  mac: AC:84:C6:A8:1D:9B
+  name: HS105
+  picture:
+  track: false
+
+galaxys9:
+  hide_if_away: false
+  icon:
+  mac: 00:9D:6B:1E:79:DC
+  name: Galaxy-S9
+  picture:
+  track: false
+
+squeezeboxradio:
+  hide_if_away: false
+  icon:
+  mac: 00:04:20:28:DD:46
+  name: SqueezeboxRadio
   picture:
   track: false

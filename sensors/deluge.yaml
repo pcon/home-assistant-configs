@@ -1,9 +1,0 @@
-- platform: deluge
-  host: !secret server_host
-  name: 'Deluge'
-  username: !secret deluge_user
-  password: !secret deluge_pass
-  monitored_variables:
-    - 'current_status'
-    - 'download_speed'
-    - 'upload_speed'

@@ -1,6 +1,7 @@
 view: yes
 icon: mdi:server
 entities:
+  - media_player.office_mpd
   - group.internet
   - group.deluge
   - group.sonarr

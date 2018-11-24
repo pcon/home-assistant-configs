@@ -1,12 +1,6 @@
-- platform: foscam
-  name: "Driveway"
-  ip: !secret camera_driveway_host
-  port: !secret camera_driveway_port
-  username: !secret camera_driveway_user
-  password: !secret camera_driveway_pass
-- platform: foscam
-  name: "Garage"
-  ip: !secret camera_garage_host
-  port: !secret camera_garage_port
-  username: !secret camera_garage_user
-  password: !secret camera_garage_pass
+- platform: synology
+  url: !secret nas_url
+  username: !secret nas_user
+  password: !secret nas_pass
+  timeout: 15
+  verify_ssl: False

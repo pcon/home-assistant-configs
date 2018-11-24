@@ -1,0 +1,4 @@
+christmas_setup:
+  name: Is Christmas setup
+  initial: off
+  icon: mdi:pine-tree

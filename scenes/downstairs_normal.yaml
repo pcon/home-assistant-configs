@@ -1,0 +1,8 @@
+- name: Downstairs Normal 
+  entities:
+    switch.tplink1:
+      state: off
+    switch.tplink2:
+      state: off
+    switch.front_porch_switch:
+      state: off

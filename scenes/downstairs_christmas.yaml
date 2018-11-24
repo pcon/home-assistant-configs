@@ -1,0 +1,8 @@
+- name: Downstairs Christmas
+  entities:
+    switch.tplink1:
+      state: on
+    switch.tplink2:
+      state: on
+    switch.front_porch_switch:
+      state: on

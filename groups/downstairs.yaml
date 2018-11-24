@@ -1,0 +1,12 @@
+view: yes
+icon: mdi:television-classic
+entities:
+  - media_player.receiver
+  - climate.downstairs_thermostat_cooling_1
+  - climate.downstairs_thermostat_heating_1
+  - switch.scooter
+  - switch.tplink1
+  - switch.tplink2
+  - switch.front_porch_switch
+  - scene.downstairs_normal
+  - scene.downstairs_christmas
