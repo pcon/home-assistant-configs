@@ -1,0 +1,6 @@
+- platform: broadlink
+  type: sp2
+  host: !secret ankuoo2_host
+  mac: !secret ankuoo2_mac
+  name: ankuoo2
+  friendly_name: ankuoo2

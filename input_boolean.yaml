@@ -1,4 +1,9 @@
 christmas_setup:
   name: Is Christmas setup
-  initial: off
   icon: mdi:pine-tree
+vacation_mode:
+  name: Vacation mode
+  icon: mdi:briefcase
+vacation_mode_alert:
+  name: Vacation mode alert sent
+  icon: mdi:briefcase-check

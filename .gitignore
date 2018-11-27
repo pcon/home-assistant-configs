@@ -1,5 +1,6 @@
 plex.conf
 secrets.yaml
+sabnzbd.conf
 *.log
 *.db
 *.db-*

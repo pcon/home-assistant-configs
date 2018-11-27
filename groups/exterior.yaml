@@ -2,7 +2,6 @@ view: yes
 icon: mdi:garage
 entities:
   - group.packages
-  - group.weather
   - cover.garage_left
   - cover.garage_right
   - group.exterior_cameras

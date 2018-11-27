@@ -10,6 +10,7 @@ homeassistant:
 frontend:
 config:
 recorder:
+  db_url: !secret mariadb_path
 
 http:
   base_url: assist.deadlypenguin.com:80

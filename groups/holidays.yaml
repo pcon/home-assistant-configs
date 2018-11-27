@@ -1,0 +1,4 @@
+view: no
+name: Holidays
+entities:
+  - input_boolean.christmas_setup

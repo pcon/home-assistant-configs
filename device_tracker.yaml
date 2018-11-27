@@ -10,3 +10,4 @@
     - hostname
     - idletime
     - ap_mac
+    - last_seen

@@ -14,7 +14,7 @@ beth:
 
 kathy:
           hide_if_away: true
-          mac: 44:80:EB:7E:5B:0F
+          mac: B4:F1:DA:B6:90:20
           name: Kathy 
           picture: https://lh3.googleusercontent.com/Nqn1h6qp6QnUIeNyKTLCA9moWXGA8mQBDDz4q1hqkcSH_3KHUc7puUYnuv9Yc9mbjvrLCuyqCStGOhQ3a1fHfEVrMTlA7boeDBNeqoLbRCYEw2IEoJHngXrOg_crxnicypfKYcJT4uBAf91PU5SK3sObvDhgdMXhRHfkN7rCkfhcXA53cKa-KvV2XfWHDB7U13wsdjlfexs6CW1IzBdRBqRX1_y3zykR5M8cjS6i3zPs4aIGT8jaFR1xCA4T5VmxBaw0P_TjnHTqBNseSIgMXmLOHnDFgOSm-5_sHbii-XdsGgKpIMeh8T_9A_O_Pe147VfcURvjEPjsOn_QpeVJkD985DFDh8si60yUcp-8HFHpP8-0iOFUhraPX8p6luIjdRVj3XdI5hRvsR_TxhmIKzYwxuQoh0YKIVpJX2nHu8ZS2uNKwVRKF8CqWwWG-SS5E-wBdHCwVX-TO7dUZbFWkmRdqyHxY4tqmzYn-iuziechV9-MTNsOv2sSY8-FY7uog2xVsJG9Cw-VGecY_l6hqoqPVJiffMljqpkBYDLWzEU1o4X1gNkRtQJrh5LPp0TJ9gDkG890l6Xot5VBR7aNg8y8X6ofqUFBaZ-fYv3Y=s713-no
           track: true
@@ -400,14 +400,6 @@ samuelsiphone:
   picture:
   track: false
 
-b4f1dab69020:
-  hide_if_away: false
-  icon:
-  mac: B4:F1:DA:B6:90:20
-  name: b4f1dab69020
-  picture:
-  track: false
-
 60e3acd87b97:
   hide_if_away: false
   icon:
@@ -533,5 +525,45 @@ squeezeboxradio:
   icon:
   mac: 00:04:20:28:DD:46
   name: SqueezeboxRadio
+  picture:
+  track: false
+
+retropie:
+  hide_if_away: false
+  icon:
+  mac: 00:13:EF:D0:28:17
+  name: retropie
+  picture:
+  track: false
+
+retropie_2:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:3A:4F:A8
+  name: retropie
+  picture:
+  track: false
+
+18b430b59a3a:
+  hide_if_away: false
+  icon:
+  mac: 18:B4:30:B5:9A:3A
+  name: 18b430b59a3a
+  picture:
+  track: false
+
+broadlink_othert1b9b66b:
+  hide_if_away: false
+  icon:
+  mac: B4:43:0D:B9:B6:6B
+  name: BroadLink Other-T1-b9-b6-6b
+  picture:
+  track: false
+
+ankuoo_neob63140:
+  hide_if_away: false
+  icon:
+  mac: B4:43:0D:B6:31:40
+  name: Ankuoo Neo-b6-31-40
   picture:
   track: false

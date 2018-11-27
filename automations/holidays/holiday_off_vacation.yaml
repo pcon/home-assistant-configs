@@ -1,13 +1,13 @@
-alias: "Holiday Lights Off - Non Vacation"
+alias: "Holiday Lights Off - Vacation"
 trigger:
   - platform: time 
-    at: '22:00:00'
+    at: '07:00:00'
 condition:
   condition: and
   conditions:
     - platform: state
       entity: input_boolean.vacation_mode
-      state: 'off'
+      state: 'on'
     - condition: or
       conditions:
         - condition: state

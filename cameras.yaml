@@ -4,3 +4,15 @@
   password: !secret nas_pass
   timeout: 15
   verify_ssl: False
+- platform: foscam
+  ip: !secret camera_rhys_host
+  port: !secret camera_rhys_port
+  username: !secret camera_rhys_user
+  password: !secret camera_rhys_pass
+  name: rhys
+- platform: foscam
+  ip: !secret camera_bennett_host
+  port: !secret camera_bennett_port
+  username: !secret camera_bennett_user
+  password: !secret camera_bennett_pass
+  name: bennett

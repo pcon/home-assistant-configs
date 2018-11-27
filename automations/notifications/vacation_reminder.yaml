@@ -1,0 +1,24 @@
+alias: "Remind vacation mode"
+trigger:
+  - platform: time
+    minutes: '/10'
+condition:
+  - condition: state
+    entity_id: 'input_boolean.vacation_mode'
+    state: 'off'
+  - condition: state
+    entity_id: 'input_boolean.vacation_mode_alert'
+    state: 'off'
+  - condition: numeric_state
+    entity_id: sensor.seen_pcon
+    above: 23.9
+  - condition: numeric_state
+    entity_id: sensor.seen_beth
+    above: 23.9
+action:
+  - service: notify.hangouts_pcon
+    data:
+      message: 'Did you forget to enable vacation mode?'
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.vacation_mode_alert

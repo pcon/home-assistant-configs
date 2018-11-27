@@ -18,6 +18,63 @@ views:
                     card:
                             type: glance
                             title: People
+                  - id: christmas
+                    type: conditional
+                    conditions:
+                            - entity: input_boolean.christmas_setup
+                              state: "on"
+                    card:
+                            type: entities
+                            title: Christmas
+                            show_header_toggle: false
+                            entities:
+                                    - entity: scene.downstairs_christmas
+                                      name: Make it Christmas
+                                      icon: mdi:snowman
+                                    - entity: switch.tplink1
+                                      name: Christmas Tree
+                                      icon: mdi:pine-tree
+                                    - entity: switch.tplink2
+                                      name: Railing
+                                      icon: mdi:track-light
+                                    - entity: switch.front_porch_switch
+                                      name: Star and Laser
+                                      icon: mdi:star-four-points
+                                    - entity: scene.downstairs_normal
+                                      name: Goodnight
+                                      icon: mdi:weather-night
+                  - id: downstairs_switches
+                    type: conditional
+                    conditions:
+                            - entity: input_boolean.christmas_setup
+                              state: "off"
+                    card:
+                            type: entities
+                            title: Downstairs 
+                            show_header_toggle: false
+                            entities:
+                                    - entity: switch.tplink1
+                                      name: Living Room
+                                      icon: mdi:sofa
+                                    - entity: switch.tplink2
+                                      name: Foyer
+                                      icon: mdi:track-light
+                                    - entity: switch.front_porch_switch
+                                      name: Front Porch
+                                      icon: mdi:flower
+                                    - entity: scene.downstairs_normal
+                                      name: Goodnight
+                                      icon: mdi:weather-night
+
+        - title: Server
+          id: server
+          icon: mdi:server
+          cards:
+                  - id: 
+        - title: Temps
+          id: temps
+          icon: mdi:thermometer-lines
+          cards:
                   - id: freezer
                     type: "custom:mini-graph-card"
                     entity: sensor.freezer
@@ -40,7 +97,15 @@ views:
                           line_width: 4
                           font_size: 75
                           color: '#3498db'
-                  - entities: [ scene.downstairs_normal, scene.downstairs_christmas ]
-                    show_header_toggle: true
-                    title: Scenes
-                    type: entities
+
+        - title: Holidays
+          id: holidays
+          icon: mdi:calendar-search
+          cards:
+                 - id: holiday_setup
+                   type: entities
+                   title: Holiday Setup
+                   show_header_toggle: false
+                   entities:
+                           - entity: input_boolean.christmas_setup
+                             name: Is Christmas setup?

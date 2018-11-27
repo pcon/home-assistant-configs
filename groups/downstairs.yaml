@@ -8,5 +8,3 @@ entities:
   - switch.tplink1
   - switch.tplink2
   - switch.front_porch_switch
-  - scene.downstairs_normal
-  - scene.downstairs_christmas

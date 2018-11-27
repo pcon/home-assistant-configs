@@ -1,0 +1,5 @@
+view: no
+name: Vacation
+entities:
+  - input_boolean.vacation_mode
+  - input_boolean.vacation_mode_alert
