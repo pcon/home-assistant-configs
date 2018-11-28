@@ -22,6 +22,12 @@ updater:
 hassio:
 history:
 logbook:
+  exclude:
+    entities:
+      - input_number.timestamp_beth
+      - input_number.timestamp_pcon
+      - automation.set_last_seen_timestamp_for_beth
+      - automation.set_last_seen_timestamp_for_pcon
 tts:
   - platform: google
 mqtt:
