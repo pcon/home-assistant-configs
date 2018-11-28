@@ -70,7 +70,14 @@ views:
           id: server
           icon: mdi:server
           cards:
-                  - id: 
+                  - id: test
+                    type: entities
+                    title: Test
+                    entities:
+                            - entity: automation.holiday_lights_off__non_vacation
+                              name: Holiday Lights Off - Non Vacation
+                            - entity: automation.holiday_lights_off__vacation
+                              name: Holiday Lights Off - Vacation
         - title: Temps
           id: temps
           icon: mdi:thermometer-lines
@@ -109,3 +116,29 @@ views:
                    entities:
                            - entity: input_boolean.christmas_setup
                              name: Is Christmas setup?
+                 - id: vacation
+                   type: entities
+                   title: Vacation
+                   show_header_toggle: false
+                   entities:
+                           - entity: input_boolean.vacation_mode
+                             name: Vacation Mode
+                           - entity: input_boolean.vacation_mode_alert
+                             name: Vacation Mode alert sent
+                 - id: automation
+                   type: entities
+                   title: Automation
+                   show_header_toggle: false
+                   entities:
+                           - entity: automation.christmas_lights
+                           - entity: automation.holiday_lights_off__non_vacation
+                           - entity: automation.holiday_lights_off__vacation
+                           - entity: automation.clear_vacation_mode_alert
+                           - entity: automation.remind_vacation_mode
+                           - entity: automation.remind_turn_off_vacation_mode
+                           - entity: automation.turn_off_scooter_warmer_at_night
+                           - entity: automation.turn_off_scooter_warmer_when_everyone_leaves
+                           - entity: automation.notify_if_the_left_garage_door_has_been_open_too_long
+                           - entity: automation.notify_if_the_left_garage_door_has_been_opened_in_the_middle_of_the_night
+                           - entity: automation.notify_if_the_right_garage_door_has_been_open_too_long
+                           - entity: automation.notify_if_the_right_garage_door_has_been_opened_in_the_middle_of_the_night

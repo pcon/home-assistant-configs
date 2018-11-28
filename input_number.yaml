@@ -1,0 +1,10 @@
+timestamp_pcon:
+  name: Timestamp pcon
+  max: 4102444800
+  min: 1514764800
+  unit_of_measurement: seconds
+timestamp_beth:
+  name: Timestamp beth
+  max: 4102444800
+  min: 1514764800
+  unit_of_measurement: seconds

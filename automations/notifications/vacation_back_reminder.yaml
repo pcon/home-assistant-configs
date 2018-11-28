@@ -14,10 +14,10 @@ condition:
     - condition: or
       conditions:
          - condition: numeric_state
-           entity_id: sensor.seen_pcon
+           entity_id: sensor.pcon_gone
            below: 1
          - condition: numeric_state
-           entity_id: sensor.seen_beth
+           entity_id: sensor.beth_gone
            below: 1
 action:
   - service: notify.hangouts_pcon

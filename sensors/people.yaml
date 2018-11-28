@@ -1,20 +1,18 @@
 - platform: template
   sensors:
-    seen_pcon:
-      friendly_name: "Seen Patrick"
+    pcon_last_seen:
+      friendly_name: "Seen Patrick timestamp"
+      unit_of_measurement: 'seconds'
+      value_template: "{{ state_attr('device_tracker.pcon', 'last_seen') }}"
+    pcon_gone:
+      friendly_name: "Time Patrick has been gone"
       unit_of_measurement: 'hours'
-      value_template: >-
-        {% if state_attr('device_tracker.pcon', 'last_seen') == None %}
-           24
-        {% else %}
-           {{ ((as_timestamp(utcnow()) - state_attr('device_tracker.pcon', 'last_seen')) / 3600) | round (2) }}
-        {% endif %}
-    seen_beth:
-      friendly_name: "Seen Beth"
+      value_template: "{{ ((as_timestamp(utcnow()) - states('input_number.timestamp_pcon') | float) / 3600) | round (2) }}"
+    beth_last_seen:
+      friendly_name: "Seen Beth timestamp"
+      unit_of_measurement: 'seconds'
+      value_template: "{{ state_attr('device_tracker.beth', 'last_seen') }}"
+    beth_gone:
+      friendly_name: "Time Beth has been gone"
       unit_of_measurement: 'hours'
-      value_template: >-
-        {% if state_attr('device_tracker.beth', 'last_seen') == None %}
-           24
-        {% else %}
-           {{ ((as_timestamp(utcnow()) - state_attr('device_tracker.beth', 'last_seen')) / 3600) | round (2) }}
-        {% endif %}
+      value_template: "{{ ((as_timestamp(utcnow()) - states('input_number.timestamp_beth') | float) / 3600) | round (2) }}"

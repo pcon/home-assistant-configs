@@ -1,0 +1,12 @@
+alias: "Set last seen timestamp for pcon"
+trigger:
+  - platform: state
+    entity_id: sensor.pcon_last_seen
+condition:
+    condition: template
+    value_template: '{{ states("sensor.pcon_last_seen") != None }}'
+action:
+  - service: input_number.set_value
+    data_template:
+      entity_id: input_number.timestamp_pcon
+      value: '{{ states("sensor.pcon_last_seen") }}'

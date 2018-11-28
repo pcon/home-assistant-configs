@@ -1,0 +1,12 @@
+alias: "Set last seen timestamp for beth"
+trigger:
+  - platform: state
+    entity_id: sensor.beth_last_seen
+condition:
+    condition: template
+    value_template: '{{ states("sensor.beth_last_seen") != None }}'
+action:
+  - service: input_number.set_value
+    data_template:
+      entity_id: input_number.timestamp_beth
+      value: '{{ states("sensor.beth_last_seen") }}'

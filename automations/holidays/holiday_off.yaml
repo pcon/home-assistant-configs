@@ -5,8 +5,8 @@ trigger:
 condition:
   condition: and
   conditions:
-    - platform: state
-      entity: input_boolean.vacation_mode
+    - condition: state
+      entity_id: input_boolean.vacation_mode
       state: 'off'
     - condition: or
       conditions:
