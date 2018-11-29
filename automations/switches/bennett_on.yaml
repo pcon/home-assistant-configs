@@ -1,0 +1,11 @@
+alias: "Bennett's Room - On"
+trigger:
+  - platform: time
+    at: '19:00:00'
+condition:
+  - condition: state
+    entity_id: input_boolean.vacation_mode
+    state: 'off'
+action:
+  - service: scene.turn_on
+    entity_id: scene.bennett_room__on

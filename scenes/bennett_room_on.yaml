@@ -1,0 +1,6 @@
+- name: "Bennett's Room - On"
+  entities:
+    switch.ankuoo1_2:
+      state: on
+    switch.ankuoo2:
+      state: on

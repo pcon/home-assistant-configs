@@ -1,0 +1,11 @@
+alias: "Update the gone time"
+trigger:
+  - platform: time
+    minutes: '/5'
+action:
+  - service: homeassistant.update_entity
+    data:
+      entity_id: sensor.pcon_gone
+  - service: homeassistant.update_entity
+    data:
+      entity_id: sensor.beth_gone
