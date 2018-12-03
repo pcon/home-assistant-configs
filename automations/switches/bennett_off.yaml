@@ -4,4 +4,4 @@ trigger:
     at: '07:00:00'
 action:
   - service: scene.turn_on
-    entity_id: scene.bennett_room__off
+    entity_id: scene.bennetts_room__off

@@ -8,4 +8,4 @@ condition:
     state: 'off'
 action:
   - service: scene.turn_on
-    entity_id: scene.bennett_room__on
+    entity_id: scene.bennetts_room__on

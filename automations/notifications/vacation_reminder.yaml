@@ -11,10 +11,10 @@ condition:
     state: 'off'
   - condition: numeric_state
     entity_id: sensor.pcon_gone
-    above: 23.9
+    above: 18
   - condition: numeric_state
     entity_id: sensor.beth_gone
-    above: 23.9
+    above: 18
 action:
   - service: notify.hangouts_pcon
     data:

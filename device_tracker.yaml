@@ -11,3 +11,4 @@
     - idletime
     - ap_mac
     - last_seen
+  interval_seconds: 60

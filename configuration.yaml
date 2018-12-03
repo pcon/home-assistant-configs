@@ -28,6 +28,7 @@ logbook:
       - input_number.timestamp_pcon
       - automation.set_last_seen_timestamp_for_beth
       - automation.set_last_seen_timestamp_for_pcon
+      - automation.update_the_gone_time
 tts:
   - platform: google
 mqtt:
