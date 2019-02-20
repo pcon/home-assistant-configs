@@ -1,3 +1,6 @@
 [submodule "www/mini-graph-card"]
 	path = www/mini-graph-card
 	url = https://github.com/kalkih/mini-graph-card.git
+[submodule "www/dual-thermostat"]
+	path = www/dual-thermostat
+	url = https://github.com/enriqg9/dual-thermostat.git

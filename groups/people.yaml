@@ -2,7 +2,7 @@ view: yes
 name: People
 icon: mdi:account-multiple
 entities:
-  - device_tracker.pcon
+  - device_tracker.pcon_phone
   - device_tracker.beth
   - device_tracker.kathy
   - device_tracker.richard

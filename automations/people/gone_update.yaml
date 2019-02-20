@@ -1,6 +1,6 @@
 alias: "Update the gone time"
 trigger:
-  - platform: time
+  - platform: time_pattern
     minutes: '/5'
 action:
   - service: homeassistant.update_entity

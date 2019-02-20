@@ -3,7 +3,7 @@
     pcon_last_seen:
       friendly_name: "Seen Patrick timestamp"
       unit_of_measurement: 'seconds'
-      value_template: "{{ state_attr('device_tracker.pcon', 'last_seen') }}"
+      value_template: "{{ state_attr('device_tracker.pcon_phone', 'last_seen') }}"
     pcon_gone:
       friendly_name: "Time Patrick has been gone"
       unit_of_measurement: 'hours'

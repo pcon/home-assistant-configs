@@ -1,6 +1,6 @@
 alias: "Remind turn off vacation mode"
 trigger:
-  - platform: time
+  - platform: time_pattern
     minutes: '/10'
 condition:
   condition: and

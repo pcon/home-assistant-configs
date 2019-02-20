@@ -1,6 +1,5 @@
 - platform: mqtt
   name: "Garage Right"
-  device_class: "garage"
   state_topic: "home-assistant/cover/garage/right/state"
   qos: 0
   retain: true
@@ -9,7 +8,6 @@
   optimistic: false
 - platform: mqtt
   name: "Garage Left"
-  device_class: "garage"
   state_topic: "home-assistant/cover/garage/left/state"
   qos: 0
   retain: true

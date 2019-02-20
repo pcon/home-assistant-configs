@@ -1,0 +1,13 @@
+alias: "Freezer not checked in"
+trigger:
+  - platform: template
+    value_template: >
+      {% set duration_minutes = 30 %}
+      {% set last_checkin = state_attr('sensor.freezer', 'last_checkin')|float %}
+      {% set current_time = as_timestamp(now()) %}
+      {{ last_checkin + duration_minutes * 60 < current_time }}
+action:
+  - service: notify.pushover
+    data:
+      message: "Freezer has not checked in for 30 minutes"
+      title: "Freezer Alert"

@@ -2,6 +2,13 @@ title: Home
 resources:
         - url: /local/mini-graph-card/mini-graph-card.js?v=0.0.6
           type: module
+        - url: /local/mini-media-player-bundle.js?v=0.9.7
+          type: module
+        - url: /local/dual-thermostat/dual-thermostat/dual-thermostat.js?v=1
+          type: module
+custom_updater:
+          card_urls:
+            - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
 views:
         - title: Home 
           id: home
@@ -66,6 +73,59 @@ views:
                                       name: Goodnight
                                       icon: mdi:weather-night
 
+                  - type: entities
+                    title: Media Players
+                    id: media_players
+                    entities:
+                          - id: media_kitchen
+                            type: custom:mini-media-player
+                            entity: media_player.kitchen
+                            icon: mdi:amazon-alexa
+                            group: true
+                            show_source: true
+                            artwork: cover
+                            power_color: true
+                            hide_volume: true
+                            show_progress: true
+                            hide_power: true
+                            idle_view: true
+                            show_tts: alexa
+                          - id: media_bedroom
+                            type: custom:mini-media-player
+                            entity: media_player.bedroom_2
+                            icon: mdi:amazon-alexa
+                            group: true
+                            show_source: true
+                            artwork: cover
+                            power_color: true
+                            hide_volume: true
+                            show_progress: true
+                            hide_power: true
+                            show_tts: alexa
+                          - id: media_beth
+                            type: custom:mini-media-player
+                            entity: media_player.beth
+                            icon: mdi:amazon-alexa
+                            group: true
+                            show_source: true
+                            artwork: cover
+                            power_color: true
+                            hide_volume: true
+                            show_progress: true
+                            hide_power: true
+                            show_tts: alexa
+                          - id: media_pcon
+                            type: custom:mini-media-player
+                            entity: media_player.patrick
+                            icon: mdi:amazon-alexa
+                            group: true
+                            show_source: true
+                            artwork: cover
+                            power_color: true
+                            hide_volume: true
+                            show_progress: true
+                            hide_power: true
+                            show_tts: alexa
         - title: Server
           id: server
           icon: mdi:server
@@ -92,19 +152,18 @@ views:
                   - id: thermostats
                     type: horizontal-stack
                     cards:
-                        - type: "custom:mini-graph-card"
-                          entity: sensor.upstairs_thermostat_temperature
-                          height: 100
-                          line_width: 4
-                          font_size: 75
-                          color: '#3498db'
-                        - type: "custom:mini-graph-card"
-                          entity: sensor.downstairs_thermostat_temperature
-                          height: 100
-                          line_width: 4
-                          font_size: 75
-                          color: '#3498db'
-
+                        - type: "custom:dual-thermostat"
+                          name: Upstairs
+                          entities:
+                                  cool: climate.upstairs_thermostat_heating_1
+                                  heat: climate.upstairs_thermostat_cooling_1
+                          fan_control: true
+                        - type: "custom:dual-thermostat"
+                          name: Downstairs
+                          entities:
+                                  cool: climate.downstairs_thermostat_heating_1
+                                  heat: climate.downstairs_thermostat_cooling_1
+                          fan_control: true
         - title: Holidays
           id: holidays
           icon: mdi:calendar-search

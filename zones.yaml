@@ -1,0 +1,16 @@
+- name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  icon: mdi:home
+- name: Work
+  latitude: !secret work_latitude
+  longitude: !secret work_longitude
+  icon: mdi:office-building
+- name: Bennett School
+  latitude: !secret school_latitude
+  longitude: !secret school_longitude
+  icon: mdi:chair-school
+- name: Grandma House
+  latitude: !secret grandma_latitude
+  longitude: !secret grandma_longitude
+  icon: mdi:cookie

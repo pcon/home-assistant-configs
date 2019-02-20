@@ -1,3 +1,0 @@
-- platform: cast
-  name: "Chromecast Bedroom"
-  host: !secret cast_bedroom_host

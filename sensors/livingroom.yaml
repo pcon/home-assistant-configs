@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    livingroom_volume:
+      friendly_name: 'Livingroom Volume'
+      value_template: '{{ state_attr("media_player.receiver", "volume_level") }}' 
+      unit_of_measurement: 'percent'

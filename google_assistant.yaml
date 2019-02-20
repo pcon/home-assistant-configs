@@ -1,0 +1,25 @@
+project_id: !secret google_project
+api_key: !secret google_api
+exposed_domains:
+  - switch
+  - scene
+entity_config:
+  switch.scooter:
+    name: Scooter
+    room: Living Room
+  switch.tplink1:
+    name: tplink1
+    aliases:
+      - Tree
+    room: Living Room
+  switch.tplink2:
+    name: tplink2
+    aliases:
+      - Foyer
+      - Railing
+  switch.front_porch_switch:
+    room: Outside
+  switch.ankuoo1_2:
+    room: Bennett
+  switch.ankuoo2:
+    room: Bennett

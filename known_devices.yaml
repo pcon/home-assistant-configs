@@ -1,10 +1,3 @@
-pcon:
-        name: Patrick
-        mac: 48:60:5F:6A:01:FD
-        picture: /local/people/pcon.jpg
-        track: true
-        hide_if_away: false
-
 beth:
         name: Beth
         mac: 48:60:5F:6A:70:28
@@ -565,5 +558,77 @@ ankuoo_neob63140:
   icon:
   mac: B4:43:0D:B6:31:40
   name: Ankuoo Neo-b6-31-40
+  picture:
+  track: false
+
+googlehome:
+  hide_if_away: false
+  icon:
+  mac: 38:8B:59:75:10:71
+  name: Google-Home
+  picture:
+  track: false
+
+amazonac969fb61:
+  hide_if_away: false
+  icon:
+  mac: C4:95:00:AA:A4:0A
+  name: amazon-ac969fb61
+  picture:
+  track: false
+
+nathanilsiphone:
+  hide_if_away: false
+  icon:
+  mac: CC:2D:B7:3E:5F:41
+  name: NathanilsiPhone
+  picture:
+  track: false
+
+debrasiphone:
+  hide_if_away: false
+  icon:
+  mac: C8:D0:83:12:77:16
+  name: Debras-iPhone
+  picture:
+  track: false
+
+pcon_phone:
+  hide_if_away: false
+  icon:
+  name: Patrick
+  mac: 48:60:5F:6A:01:FD
+  picture: /local/people/pcon.jpg
+  track: true
+
+mghzlhjh_pcon:
+  hide_if_away: false
+  icon:
+  mac:
+  name: mghzlhjh
+  picture:
+  track: false
+
+android_ebb95c49:
+  hide_if_away: false
+  icon:
+  mac: 58:67:1A:52:71:DE
+  name: android ebb95c49
+  picture:
+  track: false
+
+flexo:
+  hide_if_away: false
+  icon:
+  mac: 30:D9:D9:2B:59:6C
+  name: Flexo
+  picture:
+  track: false
+
+b4_69_21_02_e4_b4:
+  hide_if_away: false
+  icon:
+  mac: B4:69:21:02:E4:B4
+  name: b4 69 21 02 e4 b4
   picture:
   track: false

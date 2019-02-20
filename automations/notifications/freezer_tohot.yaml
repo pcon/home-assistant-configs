@@ -1,0 +1,10 @@
+alias: "Freezer to hot"
+trigger: 
+  platform: numeric_state
+  entity_id: sensor.freezer_mean
+  above: 15
+action:
+  - service: notify.pushover
+    data:
+      message: "Freezer temperature too hot - {{ states('sensor.freezer_mean') }}"
+      title: "Freezer Alert"

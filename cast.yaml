@@ -1,0 +1,4 @@
+media_player:
+  - host: !secret cast_bedroom_host
+  - host: !secret cast_office_host
+  - host: !secret cast_office_home_host

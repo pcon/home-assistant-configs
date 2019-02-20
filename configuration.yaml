@@ -8,6 +8,7 @@ homeassistant:
   customize: !include_dir_merge_named customizations
 
 frontend:
+alexa:
 config:
 recorder:
   db_url: !secret mariadb_path
@@ -40,28 +41,14 @@ mqtt:
 zwave:
   usb_path: /dev/ttyACM0
 
-sabnzbd:
-  api_key: !secret sab_api
-  host: !secret sab_host
-  name: nzb
-  port: !secret sab_port
-  ssl: false
-  sensors:
-    - current_status
-    - speed
-    - queue_size
-    - queue_remaining
-    - disk_size
-    - disk_free
-    - queue_count
-    - day_size
-    - week_size
-    - month_size
-    - total_size
+owntracks:
+map:
+zone: !include zones.yaml
 
 automation: !include_dir_list automations
 binary_sensor: !include_dir_merge_list binary_sensors
 camera: !include cameras.yaml
+cast: !include cast.yaml
 cover: !include_dir_merge_list covers
 device_tracker: !include device_tracker.yaml
 group: !include_dir_named groups
@@ -71,6 +58,7 @@ intent_script: !include_dir_merge_named intent_scripts
 media_player: !include_dir_merge_list media_players
 notify: !include notify.yaml
 octoprint: !include octoprint.yaml
+sabnzbd: !include sabnzbd.yaml
 scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
 sensor: !include_dir_merge_list sensors
@@ -78,6 +66,7 @@ switch: !include_dir_merge_list switches
 
 hangouts:
   intents: !include_dir_merge_named hangouts
+google_assistant: !include google_assistant.yaml
 
 climate:
   - platform: zwave

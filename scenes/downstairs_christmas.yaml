@@ -1,4 +1,5 @@
 - name: Downstairs Christmas
+  entity_id: downstairs_christmas
   entities:
     switch.tplink1:
       state: on

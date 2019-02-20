@@ -1,4 +1,5 @@
 - name: Downstairs Normal 
+  entity_id: downstairs_normal
   entities:
     switch.tplink1:
       state: off

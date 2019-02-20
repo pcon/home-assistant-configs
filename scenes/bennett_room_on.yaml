@@ -1,4 +1,5 @@
 - name: "Bennett's Room - On"
+  entity_id: bennett_room_on
   entities:
     switch.ankuoo1_2:
       state: on

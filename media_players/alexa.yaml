@@ -1,0 +1,4 @@
+- platform: alexa
+  email: !secret amz_user
+  password: !secret amz_pass
+  url: !secret amz_host
