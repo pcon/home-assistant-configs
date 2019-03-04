@@ -1,0 +1,8 @@
+- name: Patrick
+  id: pcon
+  device_trackers:
+    - device_tracker.pcon_phone
+- name: Beth
+  id: beth
+  device_trackers:
+    - device_tracker.beth

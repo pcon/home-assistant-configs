@@ -1,7 +1,7 @@
-alias: "Notify if the left garage door has been opened in the middle of the night"
+alias: "Notify if the main garage door has been opened in the middle of the night"
 trigger:
   - platform: state
-    entity_id: cover.garage_left
+    entity_id: cover.garage_door_main
     to: 'open'
 condition:
   condition: or
@@ -29,7 +29,7 @@ condition:
 action:
   - service: notify.pushover
     data:
-      message: "Left garage door open"
+      message: "Main garage door open"
       title: "Garage door"
       data:
         priority: 2

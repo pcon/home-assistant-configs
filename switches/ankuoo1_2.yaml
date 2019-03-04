@@ -2,5 +2,4 @@
   type: sp2
   host: !secret ankuoo1_host
   mac: !secret ankuoo1_mac
-  name: ankuoo1
   friendly_name: ankuoo1

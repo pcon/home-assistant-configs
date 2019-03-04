@@ -2,8 +2,8 @@ view: yes
 icon: mdi:garage
 entities:
   - group.packages
-  - cover.garage_left
-  - cover.garage_right
+  - cover.garage_door_main
+  - cover.garage_door_secondary
   - group.exterior_cameras
   - group.freezer
   - group.crawlspace

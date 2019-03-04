@@ -1,0 +1,12 @@
+alias: "Notify if the main garage door has been open too long"
+trigger:
+  - platform: state
+    entity_id: cover.garage_door_main
+    to: 'open'
+    for:
+      hours: 2
+action:
+  - service: notify.pushover
+    data:
+      message: "Main garage door is still open"
+      title: "Garage door"

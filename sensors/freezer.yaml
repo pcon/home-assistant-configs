@@ -3,7 +3,6 @@
   json_attributes:
           - last_checkin
           - state
-  retain: true
   unit_of_measurement: "°F"
   value_template: "{{ value_json.state | round(2) }}"
   resource: !secret freezer_host

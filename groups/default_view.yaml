@@ -1,8 +1,8 @@
 view: yes
 icon: mdi:home
 entities:
-  - device_tracker.pcon_phone
-  - device_tracker.beth
+  - person.pcon
+  - person.beth
   - group.all_devices
   - group.exterior_cameras
   - group.upstairs_thermostat
