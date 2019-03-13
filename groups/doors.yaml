@@ -1,0 +1,7 @@
+view: no
+icon: mdi:door
+name: Doors
+entities:
+  - binary_sensor.front_door
+  - binary_sensor.garage_door_main_sensor
+  - binary_sensor.garage_door_secondary_sensor

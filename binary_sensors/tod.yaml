@@ -1,0 +1,4 @@
+- platform: tod
+  name: After Bedtime
+  after: '21:59:59'
+  before: '04:59:59'

@@ -3,8 +3,7 @@ icon: mdi:home
 entities:
   - person.pcon
   - person.beth
-  - group.all_devices
-  - group.exterior_cameras
+  - group.doors
   - group.upstairs_thermostat
   - group.downstairs_thermostat
   - group.freezer

@@ -27,12 +27,7 @@ condition:
         - fri
         - sat
 action:
-  - service: notify.pushover
+  - service: notify.pushover_highprio
     data:
       message: "Main garage door open"
       title: "Garage door"
-      data:
-        priority: 2
-        sound: "persistent"
-        expire: 10800
-        retry: 30

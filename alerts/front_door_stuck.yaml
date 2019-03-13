@@ -1,0 +1,9 @@
+front_door_stuck:
+  name: Front door is open
+  done_message: Front door is closed
+  entity_id: binary_sensor.front_door
+  state: 'on'
+  repeat: 5
+  skip_first: true
+  notifiers:
+    - pushover

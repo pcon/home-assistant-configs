@@ -1,0 +1,32 @@
+garage_door_main_stuck:
+  name: Main garage door is still open
+  entity_id: binary_sensor.garage_door_main_stuck
+  state: 'on'
+  repeat: 15
+  skip_first: false
+  notifiers:
+    - pushover
+garage_door_main_stuck_too_long:
+  name: Main garage door is still open
+  entity_id: binary_sensor.garage_door_main_stuck
+  state: 'on'
+  repeat: 240
+  skip_first: false
+  notifiers:
+    - pushover_highprio
+garage_door_secondary_stuck:
+  name: Secondary garage door is still open
+  entity_id: binary_sensor.garage_door_secondary_stuck
+  state: 'on'
+  repeat: 15
+  skip_first: false
+  notifiers:
+    - pushover
+garage_door_secondary_stuck_too_long:
+  name: Secondary garage door is still open
+  entity_id: binary_sensor.garage_door_secondary_stuck
+  state: 'on'
+  repeat: 240
+  skip_first: false
+  notifiers:
+    - pushover_highprio

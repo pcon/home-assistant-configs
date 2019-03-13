@@ -6,3 +6,13 @@
   platform: hangouts
   default_conversations:
     - id: !secret hangouts_pcon
+- name: pushover_highprio
+  platform: group
+  services:
+    - service: pushover
+      data:
+        data:
+          priority: 2
+          sound: 'persistent'
+          expire: 10800
+          retry: 30
