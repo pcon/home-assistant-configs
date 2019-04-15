@@ -1,3 +1,0 @@
-- platform: roku
-  friendly_name: Roku - Beth
-  host: !secret roku_beth

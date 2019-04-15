@@ -1,0 +1,7 @@
+type: entities
+title: Exterior
+show_header_toggle: false
+entities:
+  - binary_sensor.front_door
+  - binary_sensor.garage_door_main_sensor
+  - binary_sensor.garage_door_secondary_sensor

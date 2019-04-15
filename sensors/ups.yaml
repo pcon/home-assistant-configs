@@ -1,3 +1,0 @@
-- platform: ups
-  username: !secret ups_user
-  password: !secret ups_pass

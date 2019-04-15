@@ -1,0 +1,3 @@
+- host: !secret roku_bedroom
+- host: !secret roku_beth
+- host: !secret roku_livingroom

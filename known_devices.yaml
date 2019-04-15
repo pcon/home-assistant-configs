@@ -632,3 +632,11 @@ b4_69_21_02_e4_b4:
   name: b4 69 21 02 e4 b4
   picture:
   track: false
+
+zenfone_v:
+  hide_if_away: false
+  icon:
+  mac: 4C:ED:FB:72:1C:FC
+  name: ZenFone V
+  picture:
+  track: false

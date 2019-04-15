@@ -1,0 +1,8 @@
+alias: "Turn everything off in Bennett's room"
+sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.ankuoo1_2
+  - service: switch.turn_off
+    data:
+      entity_id: switch.ankuoo2

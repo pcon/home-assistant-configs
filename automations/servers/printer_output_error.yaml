@@ -1,0 +1,10 @@
+alias: "Printer output error"
+trigger: 
+  - platform: state
+    entity_id: sensor.printer_output_tray_0
+    from: 'Ready'
+action:
+  - service: notify.pushover
+    data:
+      message: "Printer output error"
+      title: "Home Assistant"

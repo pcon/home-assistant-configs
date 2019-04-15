@@ -8,7 +8,8 @@ homeassistant:
   customize: !include_dir_merge_named customizations
 
 frontend:
-alexa:
+  themes: !include_dir_named themes
+#alexa:
 config:
 recorder:
   db_url: !secret mariadb_path
@@ -44,6 +45,8 @@ zwave:
 system_health:
 owntracks:
 map:
+lovelace:
+  mode: yaml
 zone: !include zones.yaml
 
 alert: !include_dir_merge_named alerts
@@ -53,19 +56,23 @@ camera: !include cameras.yaml
 cast: !include cast.yaml
 cover: !include covers.yaml
 device_tracker: !include device_tracker.yaml
+geo_location: !include geolocation.yaml
 group: !include_dir_named groups
 input_boolean: !include input_boolean.yaml
+input_datetime: !include input_datetime.yaml
 input_number: !include input_number.yaml
 intent_script: !include_dir_merge_named intent_scripts
 media_player: !include_dir_merge_list media_players
 notify: !include notify.yaml
-octoprint: !include octoprint.yaml
 person: !include people.yaml
-sabnzbd: !include sabnzbd.yaml
+roku: !include roku.yaml
 scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
+shell_command: !include shell_commands.yaml
 sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
+tplink: !include tplink.yaml
+weather: !include weather.yaml
 
 hangouts:
   intents: !include_dir_merge_named hangouts

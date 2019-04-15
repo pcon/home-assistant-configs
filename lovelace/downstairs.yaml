@@ -1,0 +1,58 @@
+type: custom:vertical-stack-in-card
+title: Downstairs
+show_header_toggle: false
+cards:
+  - type: custom:dual-thermostat
+    name: Downstairs
+    entities:
+      - entity: climate.downstairs_thermostat_cooling_1
+        type: cool
+      - entity: climate.downstairs_thermostat_heating_1
+        type: heat
+    fan_control: true
+    min_slider: 60
+    max_slider: 75
+  - type: glance
+    show_state: false
+    columns: 3
+    entities:
+      - type: entity-button
+        icon: mdi:fire
+        name: Heat
+        entity: script.downstairs_thermostat_heat
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.downstairs_thermostat_heat
+      - type: entity-button
+        icon: mdi:autorenew
+        name: Auto
+        entity: script.downstairs_thermostat_auto
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.downstairs_thermostat_auto
+      - type: entity-button
+        icon: mdi:snowflake
+        name: Cool
+        entity: script.downstairs_thermostat_cool
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.downstairs_thermostat_cool
+  - type: glance
+    show_state: false
+    columns: 3
+    entities:
+      - entity: switch.scooter
+        tap_action:
+          action: toggle
+      - entity: switch.tplink1
+        tap_action:
+          action: toggle
+      - entity: switch.tplink2
+        tap_action:
+          action: toggle

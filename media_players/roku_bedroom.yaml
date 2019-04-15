@@ -1,3 +1,0 @@
-- platform: roku
-  friendly_name: Roku - Bedroom
-  host: !secret roku_bedroom

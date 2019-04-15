@@ -1,0 +1,11 @@
+alias: 'Wake Dispatch Home'
+trigger:
+  - platform: geo_location
+    source: geo_json
+    zone: zone.home_large
+    event: enter
+action:
+  - service: notify.pushover
+    data:
+      message: 'Geojson event'
+      title: 'Wake Dispatch'

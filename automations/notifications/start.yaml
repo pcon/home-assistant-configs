@@ -3,9 +3,6 @@ trigger:
   - platform: homeassistant
     event: start
 action:
-  - service: notify.hangouts_pcon
-    data:
-      message: 'Home Assistant has started'
   - service: notify.pushover
     data:
       message: 'Home Assistant has started'

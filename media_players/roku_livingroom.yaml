@@ -1,3 +1,0 @@
-- platform: roku
-  friendly_name: Roku - Living Room
-  host: !secret roku_livingroom

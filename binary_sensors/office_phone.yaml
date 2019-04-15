@@ -1,5 +1,0 @@
-- platform: mqtt
-  name: 'Office Phone'
-  state_topic: 'office/phone'
-  payload_on: 'ON'
-  payload_off: 'OFF'

@@ -1,0 +1,5 @@
+discovery: false
+switch:
+  - host: !secret scooter_host
+  - host: !secret tplink1_host
+  - host: !secret tplink2_host

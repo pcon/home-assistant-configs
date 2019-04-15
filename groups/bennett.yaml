@@ -1,0 +1,7 @@
+view: no
+name: Bennett
+entities:
+  - input_datetime.bennett_bedtime
+  - input_datetime.bennett_wakeup
+  - switch.ankuoo1_2
+  - switch.ankuoo2

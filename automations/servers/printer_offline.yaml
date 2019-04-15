@@ -1,0 +1,12 @@
+alias: "Printer offline"
+trigger: 
+  - platform: state
+    entity_id: sensor.laser_printer
+    to: 'Offline'
+    for:
+      minutes: 5
+action:
+  - service: notify.pushover
+    data:
+      message: "Printer offline"
+      title: "Home Assistant"

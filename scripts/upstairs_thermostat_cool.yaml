@@ -1,0 +1,10 @@
+alias: "Set upstairs to cool 70"
+sequence:
+  - service: climate.set_operation_mode
+    data:
+       entity_id: climate.upstairs_thermostat_cooling_1
+       operation_mode: cool
+  - service: climate.set_temperature
+    data:
+       entity_id: climate.upstairs_thermostat_cooling_1
+       temperature: 70

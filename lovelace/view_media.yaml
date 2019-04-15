@@ -1,0 +1,20 @@
+title: media
+id: media
+icon: mdi:radio
+cards:
+  - type: media-control
+    entity: media_player.bedroom
+  - type: media-control
+    entity: media_player.roku_bedroom
+  - type: media-control
+    entity: media_player.office_mpd
+  - type: media-control
+    entity: media_player.office_speaker
+  - type: media-control
+    entity: media_player.pcon
+  - type: media-control
+    entity: media_player.receiver
+  - type: media-control
+    entity: media_player.roku_ultra
+  - type: media-control
+    entity: media_player.roku_beth

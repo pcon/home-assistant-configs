@@ -1,0 +1,12 @@
+title: cameras
+id: cameras
+icon: mdi:camera
+cards:
+  - type: custom:camera-card
+    entity: camera.driveway
+  - type: custom:camera-card
+    entity: camera.garage
+  - type: custom:camera-card
+    entity: camera.bennett
+  - type: custom:camera-card
+    entity: camera.rhys

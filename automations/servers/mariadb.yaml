@@ -1,0 +1,11 @@
+alias: "Mariadb down"
+trigger: 
+  - platform: state
+    entity_id: binary_sensor.blog
+    to: 'off'
+action:
+  - service: notify.pushover
+    data:
+      message: "Restarting mariadb"
+      title: "Mariadb down"
+  - service: shell_command.restart_mariadb

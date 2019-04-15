@@ -1,0 +1,10 @@
+alias: "Printer toner low"
+trigger: 
+  - platform: numeric_state
+    entity_id: sensor.printer_toner_black
+    below: 15
+action:
+  - service: notify.pushover
+    data:
+      message: "Printer toner low"
+      title: "Home Assistant"

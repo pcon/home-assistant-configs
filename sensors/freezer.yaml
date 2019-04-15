@@ -11,3 +11,11 @@
   entity_id: sensor.freezer
   max_age:
           minutes: 30
+- platform: template
+  sensors:
+    freezer_checkin:
+      entity_id: sensor.freezer
+      friendly_name: 'Freezer Last Check-in'
+      unit_of_measurement: 'Minutes'
+      value_template: "{{ ((as_timestamp(utcnow()) - state_attr('sensor.freezer', 'last_checkin') | float) / 60) | round(0) }}"
+      icon_template: "mdi:alarm-check"

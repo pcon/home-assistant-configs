@@ -1,0 +1,27 @@
+type: custom:vertical-stack-in-card
+title: Bennett
+show_header_toggle: false
+cards:
+  - type: entities
+    entities:
+      - input_datetime.bennett_bedtime
+      - input_datetime.bennett_wakeup
+  - type: glance
+    show_state: false
+    columns: 3
+    entities:
+      - entity: switch.ankuoo1_2
+        tap_action:
+          action: toggle
+      - entity: switch.ankuoo2
+        tap_action:
+          action: toggle
+      - type: entity-button
+        icon: mdi:power
+        name: "Off"
+        entity: script.bennett_turnoff
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.bennett_turnoff

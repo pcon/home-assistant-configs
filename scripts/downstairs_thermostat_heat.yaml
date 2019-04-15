@@ -1,0 +1,10 @@
+alias: "Set downstairs to heat 69"
+sequence:
+  - service: climate.set_operation_mode
+    data:
+       entity_id: climate.downstairs_thermostat_heating_1
+       operation_mode: heat
+  - service: climate.set_temperature
+    data:
+       entity_id: climate.downstairs_thermostat_heating_1
+       temperature: 69

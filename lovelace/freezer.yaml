@@ -1,0 +1,13 @@
+type: custom:vertical-stack-in-card
+title: Freezer
+show_header_toggle: false
+cards:
+  - type: sensor
+    entity: sensor.freezer
+    name: Freezer
+    graph: line
+    unit: F
+    icon: mdi:snowflake
+  - type: entities
+    entities:
+      - sensor.freezer_checkin

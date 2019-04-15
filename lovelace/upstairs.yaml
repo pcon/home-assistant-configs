@@ -1,0 +1,45 @@
+type: custom:vertical-stack-in-card
+title: Upstairs
+show_header_toggle: false
+cards:
+  - type: custom:dual-thermostat
+    name: Upstairs
+    entities:
+      - entity: climate.upstairs_thermostat_cooling_1
+        type: cool
+      - entity: climate.upstairs_thermostat_heating_1
+        type: heat
+    fan_control: true
+    min_slider: 60
+    max_slider: 75
+  - type: glance
+    show_state: false
+    columns: 3
+    entities:
+      - type: entity-button
+        icon: mdi:fire
+        name: Heat
+        entity: script.upstairs_thermostat_heat
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.upstairs_thermostat_heat
+      - type: entity-button
+        icon: mdi:autorenew
+        name: Auto
+        entity: script.upstairs_thermostat_auto
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.upstairs_thermostat_auto
+      - type: entity-button
+        icon: mdi:snowflake
+        name: Cool
+        entity: script.upstairs_thermostat_cool
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.upstairs_thermostat_cool

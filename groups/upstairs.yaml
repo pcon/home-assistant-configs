@@ -1,8 +1,10 @@
 view: yes
 icon: mdi:bed-empty
 entities:
+  - group.bennett
   - media_player.roku_bedroom
   - media_player.bedroom
   - media_player.pcon
   - climate.upstairs_thermostat_cooling_1
   - climate.upstairs_thermostat_heating_1
+  - sensor.time

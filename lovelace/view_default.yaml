@@ -1,0 +1,11 @@
+title: default_view
+id: default
+icon: mdi:home
+cards:
+  - !include people.yaml
+  - !include weather.yaml
+  - !include freezer.yaml
+  - !include bennett.yaml
+  - !include exterior.yaml
+  - !include downstairs.yaml
+  - !include upstairs.yaml

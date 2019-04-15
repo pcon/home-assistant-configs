@@ -1,12 +1,18 @@
 switch.scooter:
   friendly_name: Scooter
   icon: mdi:motorbike
-switch.ge_14284_outdoor_smart_switch_switch:
+switch.front_porch_switch:
   friendly_name: Front Porch
   icon: mdi:tree
 switch.tplink1:
-  friendly_name: Christmas Tree
-  icon: mdi:pine-tree
+  friendly_name: Livingroom
+  icon: mdi:sofa
 switch.tplink2:
   friendly_name: Foyer
   icon: mdi:track-light
+switch.ankuoo1_2:
+  friendly_name: Lamp
+  icon: mdi:lamp
+switch.ankuoo2:
+  friendly_name: Humidifier
+  icon: mdi:elephant

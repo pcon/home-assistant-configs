@@ -2,6 +2,12 @@
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   icon: mdi:home
+- name: Home Large
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  icon: mdi:home
+  radius: 30000
+  passive: true
 - name: Work
   latitude: !secret work_latitude
   longitude: !secret work_longitude

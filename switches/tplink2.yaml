@@ -1,3 +1,0 @@
-- platform: tplink
-  host: !secret tplink2_host
-  name: tplink2

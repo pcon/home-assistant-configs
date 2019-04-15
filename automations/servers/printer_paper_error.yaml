@@ -1,0 +1,10 @@
+alias: "Printer paper error"
+trigger: 
+  - platform: state
+    entity_id: sensor.printer_tray_1
+    from: 'Ready'
+action:
+  - service: notify.pushover
+    data:
+      message: "Printer paper error"
+      title: "Home Assistant"

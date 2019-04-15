@@ -1,18 +1,22 @@
 - platform: template
   sensors:
     pcon_last_seen:
+      entity_id: device_tracker.pcon_phone
       friendly_name: "Seen Patrick timestamp"
       unit_of_measurement: 'seconds'
-      value_template: "{{ state_attr('device_tracker.pcon_phone', 'last_seen') }}"
+      value_template: "{{ as_timestamp(state_attr('device_tracker.pcon_phone', 'last_seen')) }}"
     pcon_gone:
+      entity_id: input_number.timestamp_pcon
       friendly_name: "Time Patrick has been gone"
       unit_of_measurement: 'hours'
       value_template: "{{ ((as_timestamp(utcnow()) - states('input_number.timestamp_pcon') | float) / 3600) | round (2) }}"
     beth_last_seen:
+      entity_id: device_tracker.beth
       friendly_name: "Seen Beth timestamp"
       unit_of_measurement: 'seconds'
-      value_template: "{{ state_attr('device_tracker.beth', 'last_seen') }}"
+      value_template: "{{ as_timestamp(state_attr('device_tracker.beth', 'last_seen')) }}"
     beth_gone:
+      entity_id: input_number.timestamp_beth
       friendly_name: "Time Beth has been gone"
       unit_of_measurement: 'hours'
       value_template: "{{ ((as_timestamp(utcnow()) - states('input_number.timestamp_beth') | float) / 3600) | round (2) }}"

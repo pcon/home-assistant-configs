@@ -1,3 +1,0 @@
-- platform: tplink
-  host: !secret scooter_host
-  name: scooter
