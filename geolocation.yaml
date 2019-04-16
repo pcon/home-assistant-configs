@@ -1,4 +1,4 @@
 - platform: geo_json_events
   url: !secret wakedispatch_last24
   entity_namespace: wakedispatch_home
-  radius: 10
+  radius: 3

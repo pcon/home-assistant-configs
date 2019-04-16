@@ -6,7 +6,7 @@
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   icon: mdi:home
-  radius: 30000
+  radius: 3000
   passive: true
 - name: Work
   latitude: !secret work_latitude

@@ -1,11 +1,12 @@
 alias: 'Wake Dispatch Home'
 trigger:
-  - platform: geo_location
-    source: geo_json
-    zone: zone.home_large
-    event: enter
+  platform: geo_location
+  source: geo_json_events
+  zone: zone.home_large
+  event: enter
 action:
-  - service: notify.pushover
-    data:
-      message: 'Geojson event'
-      title: 'Wake Dispatch'
+  service: notify.pushover
+  data_template:
+    message: "{{ trigger.to_state.attributes.friendly_name }}"
+  data:
+    title: 'Wake Dispatch'
