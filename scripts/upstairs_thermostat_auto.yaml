@@ -4,6 +4,8 @@ sequence:
     data:
       entity_id: climate.upstairs_thermostat_cooling_1
       operation_mode: auto
+  - delay:
+      seconds: 5
   - service: climate.set_temperature
     data:
       entity_id: climate.upstairs_thermostat_cooling_1

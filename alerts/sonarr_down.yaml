@@ -1,0 +1,9 @@
+sonarr_down:
+  name: Sonarr down
+  done_message: Sonarr up
+  entity_id: binary_sensor.sonarr
+  state: 'off'
+  repeat: 30
+  skip_first: true
+  notifiers:
+    - pushover

@@ -1,0 +1,4 @@
+devices:
+  - host: !secret google_home_office
+    track_alarms: true
+    track_devices: true

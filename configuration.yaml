@@ -32,7 +32,8 @@ logbook:
       - automation.set_last_seen_timestamp_for_pcon
       - automation.update_the_gone_time
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
 mqtt:
   broker: !secret mqtt_host
   port: !secret mqtt_port
@@ -56,7 +57,7 @@ camera: !include cameras.yaml
 cast: !include cast.yaml
 cover: !include covers.yaml
 device_tracker: !include device_tracker.yaml
-geo_location: !include geolocation.yaml
+googlehome: !include googlehome.yaml
 group: !include_dir_named groups
 input_boolean: !include input_boolean.yaml
 input_datetime: !include input_datetime.yaml

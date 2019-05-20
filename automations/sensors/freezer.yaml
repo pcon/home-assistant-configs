@@ -1,0 +1,12 @@
+alias: freezer timestamp update
+trigger:
+  - platform: state
+    entity_id: sensor.freezer
+condition:
+  condition: template
+  value_template: "{{ state_attr('sensor.freezer', 'last_checkin') != None }}"
+action:
+  - service: input_number.set_value
+    data_template:
+      entity_id: input_number.timestamp_freezer
+      value: "{{ state_attr('sensor.freezer', 'last_checkin') }}"

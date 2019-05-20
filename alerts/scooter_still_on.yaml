@@ -1,0 +1,9 @@
+scooter_still_on:
+  name: Scooter still on
+  done_message: Scooter turned off
+  entity_id: switch.scooter
+  state: 'on'
+  repeat: 120
+  skip_first: true
+  notifiers:
+    - pushover

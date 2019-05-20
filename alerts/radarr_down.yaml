@@ -1,0 +1,9 @@
+radarr_down:
+  name: Radarr down
+  done_message: Radarr up
+  entity_id: binary_sensor.radarr
+  state: 'off'
+  repeat: 30
+  skip_first: true
+  notifiers:
+    - pushover

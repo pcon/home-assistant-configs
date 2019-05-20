@@ -1,5 +1,6 @@
 restart_mariadb: !secret mariadb_restart
 pwd: pwd >> /config/command.log
+lshome: ls $HOME >> /config/command.log 2>> /config/command.log
 ls: ls -ld /data/.ssh >> /config/command.log 2>> /config/command.log
-lsssh: ls -l /data/.ssh/ >> /config/command.log 2>> /config/command.log
+lsssh: ls -l /config/id_rsa >> /config/command.log 2>> /config/command.log
 whoami: whoami >> /config/command.log

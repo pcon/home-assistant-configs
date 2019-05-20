@@ -8,3 +8,8 @@ timestamp_beth:
   max: 4102444800
   min: 1514764800
   unit_of_measurement: seconds
+timestamp_freezer:
+  name: Timestamp freezer
+  max: 4102444800
+  min: 1514764800
+  unit_of_measurement: seconds

@@ -9,14 +9,14 @@ kathy:
           hide_if_away: true
           mac: B4:F1:DA:B6:90:20
           name: Kathy 
-          picture: https://lh3.googleusercontent.com/Nqn1h6qp6QnUIeNyKTLCA9moWXGA8mQBDDz4q1hqkcSH_3KHUc7puUYnuv9Yc9mbjvrLCuyqCStGOhQ3a1fHfEVrMTlA7boeDBNeqoLbRCYEw2IEoJHngXrOg_crxnicypfKYcJT4uBAf91PU5SK3sObvDhgdMXhRHfkN7rCkfhcXA53cKa-KvV2XfWHDB7U13wsdjlfexs6CW1IzBdRBqRX1_y3zykR5M8cjS6i3zPs4aIGT8jaFR1xCA4T5VmxBaw0P_TjnHTqBNseSIgMXmLOHnDFgOSm-5_sHbii-XdsGgKpIMeh8T_9A_O_Pe147VfcURvjEPjsOn_QpeVJkD985DFDh8si60yUcp-8HFHpP8-0iOFUhraPX8p6luIjdRVj3XdI5hRvsR_TxhmIKzYwxuQoh0YKIVpJX2nHu8ZS2uNKwVRKF8CqWwWG-SS5E-wBdHCwVX-TO7dUZbFWkmRdqyHxY4tqmzYn-iuziechV9-MTNsOv2sSY8-FY7uog2xVsJG9Cw-VGecY_l6hqoqPVJiffMljqpkBYDLWzEU1o4X1gNkRtQJrh5LPp0TJ9gDkG890l6Xot5VBR7aNg8y8X6ofqUFBaZ-fYv3Y=s713-no
+          picture: /local/people/kathy.jpg
           track: true
 
 richard:
           hide_if_away: true
           mac: CC:61:E5:3B:48:CE
           name: Richard
-          picture: https://lh3.googleusercontent.com/K27Ft4R-hcbGDme1fKF6m20yA_5TTQ3wGGVoa28yAJh1qV6YtIm1j8k9zmbER44Zmqr0Dhte7sNFNeemXYxkj7PpUiq2wztodQtaZjQa4zes6Jucx84It-SUSY-q8opXs_W6LTTC-6RKbKrtIz_AAZo-w--idRiMID0osPN15hzXA-qfZ9m60hO6xw-ZFKt33MFZv8J6KaknaR6OxNrGca9F7S5TQWqRbrfwJ9f3KzOd3ly-O7OETu0Pu7jIv0JgZo_p0_oMpixfyu40tHkwYHWFPBgrsAXEuKkk-NXMQYRbsMUM6Eew0jrNO99FYEfV8AK9Wc4IBenbrwSx-2Nyh4rOnKOqB_lRkJVPMxNqkt1BMFhYfQK-XHNE6arH1dIFl11ttkJ7dOuG7OskpUWThaBOzxc5iso-JpMUfHHm-gubWQQijy9T4SmhrIFDj2OGw83_P9Lug6dD-XOoGPzXkPA6up5ml6vzpJX2JcFYukLixWBQXJP1YZlrh1ki_w_V0oDnMEL14xdb4lZ6RLoHDMNlxPmgp_rf5y1EUmeYtjqATZQVfiUxoh3pRUGPhNict3WKE5eVvGaPEqIjGu6LsFvnTSVmJ-fUVKdmbhu6=s713-no
+          picture: /local/people/richard
           track: true
 
 garage_camera:
@@ -638,5 +638,85 @@ zenfone_v:
   icon:
   mac: 4C:ED:FB:72:1C:FC
   name: ZenFone V
+  picture:
+  track: false
+
+192_168_1_95_c3_82_3c_06_cc_07:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 c3 82 3c 06 cc 07
+  picture:
+  track: false
+
+192_168_1_95_10_4e_89_5a_3b_fc:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 10 4e 89 5a 3b fc
+  picture:
+  track: false
+
+192_168_1_95_c4_97_0a_01_01_e8:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 c4 97 0a 01 01 e8
+  picture:
+  track: false
+
+192_168_1_95_48_60_5f_f6_48_53:
+  hide_if_away: true
+  icon:
+  mac:
+  name: pcon bluetooth
+  picture:
+  track: true
+
+192_168_1_95_d6_54_ab_9f_5b_b4:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 d6 54 ab 9f 5b b4
+  picture:
+  track: false
+
+192_168_1_95_00_07_80_39_a3_1a:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 00 07 80 39 a3 1a
+  picture:
+  track: false
+
+192_168_1_95_ff_ae_81_63_53_20:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 ff ae 81 63 53 20
+  picture:
+  track: false
+
+192_168_1_95_00_e0_4c_50_51_ff:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 192 168 1 95 00 e0 4c 50 51 ff
+  picture:
+  track: false
+
+14_91_82_4b_80_dd:
+  hide_if_away: false
+  icon:
+  mac: 14:91:82:4B:80:DD
+  name: 14 91 82 4b 80 dd
+  picture:
+  track: false
+
+desktop_0b00msv:
+  hide_if_away: false
+  icon:
+  mac: 98:2C:BC:50:18:3D
+  name: DESKTOP-0B00MSV
   picture:
   track: false

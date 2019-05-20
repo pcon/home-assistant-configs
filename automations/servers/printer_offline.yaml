@@ -4,7 +4,7 @@ trigger:
     entity_id: sensor.laser_printer
     to: 'Offline'
     for:
-      minutes: 5
+      minutes: 30
 action:
   - service: notify.pushover
     data:

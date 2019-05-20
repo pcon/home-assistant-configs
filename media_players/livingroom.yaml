@@ -1,4 +1,5 @@
 - platform: onkyo
   host: 192.168.1.87
   name: receiver
-
+  sources:
+    video2: 'Roku'

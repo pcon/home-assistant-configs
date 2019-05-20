@@ -3,7 +3,7 @@ trigger:
   - platform: template
     value_template: >
       {% set duration_minutes = 30 %}
-      {% set last_checkin = state_attr('sensor.freezer', 'last_checkin')|float %}
+      {% set last_checkin = states('input_number.timestamp_freezer')|float %}
       {% set current_time = as_timestamp(now()) %}
       {{ last_checkin + duration_minutes * 60 < current_time }}
 action:

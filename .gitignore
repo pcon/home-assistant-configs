@@ -13,4 +13,4 @@ deps/*.*
 OZW_Log.txt
 .storage
 tts/*.*
-.ssh
+id_rsa

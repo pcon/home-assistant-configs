@@ -1,7 +1,3 @@
 - platform: syncthru
   resource: !secret printer_host
   name: Printer
-  monitored_conditions:
-    - toner_black
-    - output_tray_0
-    - tray_1
