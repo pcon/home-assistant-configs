@@ -720,3 +720,115 @@ desktop_0b00msv:
   name: DESKTOP-0B00MSV
   picture:
   track: false
+
+android_7f49bcba139b84be:
+  hide_if_away: false
+  icon:
+  mac: B4:F7:A1:D6:65:90
+  name: android-7f49bcba139b84be
+  picture:
+  track: false
+
+elizabehsiphone_2:
+  hide_if_away: false
+  icon:
+  mac: BC:FE:D9:F2:CA:BF
+  name: ElizabehsiPhone
+  picture:
+  track: false
+
+d4_c9_4b_5c_eb_46:
+  hide_if_away: false
+  icon:
+  mac: D4:C9:4B:5C:EB:46
+  name: d4 c9 4b 5c eb 46
+  picture:
+  track: false
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: 70:3C:69:63:1F:01
+  name: iPhone
+  picture:
+  track: false
+
+esp_8d2537:
+  hide_if_away: false
+  icon:
+  mac: 84:0D:8E:8D:25:37
+  name: ESP 8D2537
+  picture:
+  track: false
+
+esp_e3f8ff:
+  hide_if_away: false
+  icon:
+  mac: 84:F3:EB:E3:F8:FF
+  name: ESP E3F8FF
+  picture:
+  track: false
+
+60_38_e0_62_5b_39:
+  hide_if_away: false
+  icon:
+  mac: 60:38:E0:62:5B:39
+  name: 60 38 e0 62 5b 39
+  picture:
+  track: false
+
+galaxy_note10:
+  hide_if_away: false
+  icon:
+  mac: D4:4D:A4:4C:35:55
+  name: Galaxy-Note10
+  picture:
+  track: false
+
+amazon_29ea46dfe:
+  hide_if_away: false
+  icon:
+  mac: 68:9A:87:9C:EB:92
+  name: amazon-29ea46dfe
+  picture:
+  track: false
+
+galaxy_note10_2:
+  hide_if_away: false
+  icon:
+  mac: D4:4D:A4:0F:66:BA
+  name: Galaxy-Note10
+  picture:
+  track: false
+
+mopbucket:
+  hide_if_away: false
+  icon:
+  mac: 00:28:F8:E8:E5:54
+  name: mopbucket
+  picture:
+  track: false
+
+c0_4a_00_52_be_b2:
+  hide_if_away: false
+  icon:
+  mac: C0:4A:00:52:BE:B2
+  name: c0 4a 00 52 be b2
+  picture:
+  track: false
+
+chromecast_3:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:53:D5:F2
+  name: Chromecast
+  picture:
+  track: false
+
+b8_27_eb_80_52_33:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:80:52:33
+  name: b8 27 eb 80 52 33
+  picture:
+  track: false

@@ -4,7 +4,7 @@ views:
   - !include lovelace/view_media.yaml
   - !include lovelace/view_cameras.yaml
 resources:
-  - url: https://cdn.jsdelivr.net/gh/bramkragten/custom-ui@master/weather-card/weather-card.min.js
+  - url: /local/lovelace/weather-card.js
     type: module
   - url: /local/lovelace/vertical-stack-in-card.js?v=0.1.2
     type: js

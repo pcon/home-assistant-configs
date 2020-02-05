@@ -1,0 +1,22 @@
+main_garage_door:
+  name: Main garage door open
+  done_message: Main garage door closed
+  entity_id: cover.garage_door_main
+  state: 'open'
+  repeat:
+    - 30
+    - 60
+  skip_first: false
+  notifiers:
+    - pushover
+secondary_garage_door:
+  name: Secondary garage door open
+  done_message: Secondary garage door closed
+  entity_id: cover.garage_door_secondary
+  state: 'open'
+  repeat:
+    - 30
+    - 60
+  skip_first: false
+  notifiers:
+    - pushover

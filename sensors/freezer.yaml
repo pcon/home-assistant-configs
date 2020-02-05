@@ -1,5 +1,5 @@
 - platform: rest
-  name: 'Freezer'
+  name: freezer_rest
   json_attributes:
           - last_checkin
           - state
@@ -8,13 +8,13 @@
   resource: !secret freezer_host
 - platform: statistics
   name: freezer
-  entity_id: sensor.freezer
+  entity_id: sensor.freezer_rest
   max_age:
           minutes: 30
 - platform: template
   sensors:
     freezer_checkin:
-      entity_id: sensor.freezer
+      entity_id: input_number.timestamp_freezer
       friendly_name: 'Freezer Last Check-in'
       unit_of_measurement: 'Minutes'
       value_template: "{{ ((as_timestamp(utcnow()) - states('input_number.timestamp_freezer') | float) / 60) | round(0) }}"

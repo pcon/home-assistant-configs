@@ -57,7 +57,6 @@ camera: !include cameras.yaml
 cast: !include cast.yaml
 cover: !include covers.yaml
 device_tracker: !include device_tracker.yaml
-googlehome: !include googlehome.yaml
 group: !include_dir_named groups
 input_boolean: !include input_boolean.yaml
 input_datetime: !include input_datetime.yaml
