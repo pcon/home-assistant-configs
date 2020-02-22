@@ -1,0 +1,9 @@
+alias: "Upstairs Thermostat Changed"
+trigger:
+  platform: state
+  entity_id: sensor.thermostat_upstairs_temp
+action:
+  - service: notify.pushover
+    data:
+      message: "Upstairs thermostat changed to {{ states('sensor.thermostat_upstairs_temp') }}"
+      title: "Thermostat Changed"

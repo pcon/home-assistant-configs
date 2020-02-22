@@ -24,7 +24,7 @@
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="70" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="69" />
 			</CommandClass>
 			<CommandClass id="64" name="COMMAND_CLASS_THERMOSTAT_MODE" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
@@ -45,298 +45,9 @@
 			</CommandClass>
 			<CommandClass id="66" name="COMMAND_CLASS_THERMOSTAT_OPERATING_STATE" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="string" genre="user" instance="1" index="0" label="Operating State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Idle" />
+				<Value type="string" genre="user" instance="1" index="0" label="Operating State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Heating" />
 			</CommandClass>
-			<CommandClass id="67" name="COMMAND_CLASS_THERMOSTAT_SETPOINT" version="1" request_flags="4" innif="true" base="0" typeInterpretation="B">
-				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Heating 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="68" />
-				<Value type="decimal" genre="user" instance="1" index="2" label="Cooling 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="71" />
-			</CommandClass>
-			<CommandClass id="68" name="COMMAND_CLASS_THERMOSTAT_FAN_MODE" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="list" genre="user" instance="1" index="0" label="Fan Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
-					<Item label="Auto Low" value="0" />
-					<Item label="On Low" value="1" />
-				</Value>
-				<SupportedModes>
-					<Mode index="0" label="Auto Low" />
-					<Mode index="1" label="On Low" />
-				</SupportedModes>
-			</CommandClass>
-			<CommandClass id="69" name="COMMAND_CLASS_THERMOSTAT_FAN_STATE" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="string" genre="user" instance="1" index="0" label="Fan State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Idle" />
-			</CommandClass>
-			<CommandClass id="90" name="COMMAND_CLASS_DEVICE_RESET_LOCALLY" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-			</CommandClass>
-			<CommandClass id="94" name="COMMAND_CLASS_ZWAVEPLUS_INFO" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="byte" genre="system" instance="1" index="0" label="ZWave+ Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="1" />
-				<Value type="short" genre="system" instance="1" index="1" label="InstallerIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="4608" />
-				<Value type="short" genre="system" instance="1" index="2" label="UserIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="4608" />
-			</CommandClass>
-			<CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="list" genre="config" instance="1" index="1" label="System Type" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = Standard, 1 = Heat Pump</Help>
-					<Item label="Standard" value="0" />
-					<Item label="Heat Pump" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="2" label="Fan Type" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = Gas (no fan w/Heat), 1 = Electric (Fan w/Heat)</Help>
-					<Item label="Gas" value="0" />
-					<Item label="Electric" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="3" label="Change Over Type" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = w/Cool, 1 = w/Heat</Help>
-					<Item label="w/Cool" value="0" />
-					<Item label="w/Heat" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="4" label="2nd Stage Heat Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = no 2nd stage heat, 1 = 2nd stage heat</Help>
-					<Item label="w/Cool" value="0" />
-					<Item label="w/Heat" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="5" label="Aux Heat Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = no aux heat, 1 = aux heat enabled</Help>
-					<Item label="Disabled" value="0" />
-					<Item label="Enabled" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="6" label="2nd Stage Cool Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = no 2nd stage cool, 1 = 2nd stage cool</Help>
-					<Item label="Disabled" value="0" />
-					<Item label="Enabled" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="7" label="Temperature Unit" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="1" size="1">
-					<Help>0 = Celsius, 1 = Fahrenheit</Help>
-					<Item label="Celsius" value="0" />
-					<Item label="Fahrenheit" value="1" />
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="8" label="Minimum Off Time" units="minutes" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="5" max="9" value="5">
-					<Help>Sets the Minimum Off Time (MOT) delay before another heating/cooling cycle can begin</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="9" label="Minimum Run Time" units="minutes" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="9" value="3">
-					<Help>Sets the Minimum Run Time (MRT) delay before a heating/cooling cycle can turn of</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="10" label="Setpoint H/C Delta" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="15" value="3">
-					<Help>Sets the minimum separation between heating and cooling setpoints</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="11" label="H Delta Stage 1 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="6" value="1">
-					<Help>Sets the delta from setpoint that stage 1 heating starts</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="12" label="H Delta Stage 1 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="5" value="0">
-					<Help>Sets the delta from setpoint that stage 1 heating stops</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="13" label="H Delta Stage 2 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="2" max="7" value="2">
-					<Help>Sets the delta from setpoint that stage 2 heating starts</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="14" label="H Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="6" value="0">
-					<Help>Sets the delay from setpoint that stage 2 heating stops</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="15" label="H Delta Aux ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="8" value="3">
-					<Help>Sets the delta from setpoint that stage 3 heating starts</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="16" label="H Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="7" value="0">
-					<Help>Sets the delta from setpoint that stage 3 heating stops</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="17" label="C Delta Stage 1 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="6" value="1">
-					<Help>Sets the delta from setpoint that stage 1 cooling starts</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="18" label="C Delta Stage 1 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="5" value="0">
-					<Help>Sets the delta from setpoint that stage 1 cooling stops</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="19" label="C Delta Stage 2 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="2" max="7" value="2">
-					<Help>Sets the delta from setpoint that stage 2 cooling starts</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="20" label="C Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="6" value="0">
-					<Help>Sets the delta from setpoint that stage 2 cooling stops</Help>
-				</Value>
-				<Value type="list" genre="config" instance="1" index="24" label="Display Lock" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="1" vindex="0" size="1">
-					<Help>Display Lock</Help>
-					<Item label="Unlocked" value="0" />
-					<Item label="Locked" value="1" />
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="26" label="Backlight Timer" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="10" max="30" value="20">
-					<Help>Sets the time from last button press that the backlight will turn OFF</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="33" label="Max Heat Setpoint" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="30" max="109" value="90">
-					<Help>Sets the maximum heating setpoint value</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="34" label="Min Cool Setpoint" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="33" max="112" value="61">
-					<Help>Sets the minimum cooling setpoint value</Help>
-				</Value>
-				<Value type="list" genre="config" instance="1" index="38" label="Schedule Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>Enable or disable thermostat&apos;s local scheduler</Help>
-					<Item label="Disabled" value="0" />
-					<Item label="Enabled" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="39" label="Run/Hold Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
-					<Help>0 = Hold, 1 = Run</Help>
-					<Item label="Hold" value="0" />
-					<Item label="Run" value="1" />
-				</Value>
-				<Value type="list" genre="config" instance="1" index="40" label="Setback Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
-					<Help>0 = No setback, 2 = Un-occupied mode</Help>
-					<Item label="No Setback" value="0" />
-					<Item label="Unoccupied Mode" value="2" />
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="41" label="Un-Occupied HSP" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="30" max="109" value="62">
-					<Help>Heat Setpoint for Unoccupied mode</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="42" label="Un-Occupied CSP" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="33" max="112" value="80">
-					<Help>Cool Setpoint for Unoccupied mode</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="43" label="Remote Sensor 1 Node Number" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="252" value="0">
-					<Help>Node number for Remote Sensor 1</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="46" label="Remote Sensor 1 Temperature" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="112" value="52">
-					<Help>Temperature of Remote Sensor 1</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="48" label="Internal Sensor Temp Offset" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-7" max="7" value="0">
-					<Help>Internal Sensor Temperature Offset</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="49" label="R1 Sensor Temp Offset" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-7" max="7" value="0">
-					<Help>R1 Sensor Temperature Offset</Help>
-				</Value>
-				<Value type="short" genre="config" instance="1" index="52" label="Filter Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="4000">
-					<Help>Timer to let know when to change or clean the filter</Help>
-				</Value>
-				<Value type="short" genre="config" instance="1" index="53" label="Max Filter Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="44">
-					<Help>Maximum allowed value for filter timer</Help>
-				</Value>
-				<Value type="short" genre="config" instance="1" index="54" label="Heat Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="0">
-					<Help>Heat Timer in hours</Help>
-				</Value>
-				<Value type="short" genre="config" instance="1" index="55" label="Cool Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="0">
-					<Help>Cool Timer in hours</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="61" label="Fan Purge Heat" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="90" value="0">
-					<Help>Fan purge period for Heat mode</Help>
-				</Value>
-				<Value type="byte" genre="config" instance="1" index="62" label="Fan Purge Cool" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="90" value="0">
-					<Help>Fan purge period for Cool mode</Help>
-				</Value>
-			</CommandClass>
-			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-			</CommandClass>
-			<CommandClass id="115" name="COMMAND_CLASS_POWERLEVEL" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="list" genre="system" instance="1" index="0" label="Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
-					<Item label="Normal" value="0" />
-					<Item label="-1dB" value="1" />
-					<Item label="-2dB" value="2" />
-					<Item label="-3dB" value="3" />
-					<Item label="-4dB" value="4" />
-					<Item label="-5dB" value="5" />
-					<Item label="-6dB" value="6" />
-					<Item label="-7dB" value="7" />
-					<Item label="-8dB" value="8" />
-					<Item label="-9dB" value="9" />
-				</Value>
-				<Value type="byte" genre="system" instance="1" index="1" label="Timeout" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
-				<Value type="button" genre="system" instance="1" index="2" label="Set Powerlevel" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="byte" genre="system" instance="1" index="3" label="Test Node" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
-				<Value type="list" genre="system" instance="1" index="4" label="Test Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
-					<Item label="Normal" value="0" />
-					<Item label="-1dB" value="1" />
-					<Item label="-2dB" value="2" />
-					<Item label="-3dB" value="3" />
-					<Item label="-4dB" value="4" />
-					<Item label="-5dB" value="5" />
-					<Item label="-6dB" value="6" />
-					<Item label="-7dB" value="7" />
-					<Item label="-8dB" value="8" />
-					<Item label="-9dB" value="9" />
-				</Value>
-				<Value type="short" genre="system" instance="1" index="5" label="Frame Count" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
-				<Value type="button" genre="system" instance="1" index="6" label="Test" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="button" genre="system" instance="1" index="7" label="Report" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="list" genre="system" instance="1" index="8" label="Test Status" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
-					<Item label="Failed" value="0" />
-					<Item label="Success" value="1" />
-					<Item label="In Progress" value="2" />
-				</Value>
-				<Value type="short" genre="system" instance="1" index="9" label="Acked Frames" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
-			</CommandClass>
-			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="100" />
-			</CommandClass>
-			<CommandClass id="129" name="COMMAND_CLASS_CLOCK" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="list" genre="user" instance="1" index="0" label="Day" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="4" size="1">
-					<Item label="Monday" value="1" />
-					<Item label="Tuesday" value="2" />
-					<Item label="Wednesday" value="3" />
-					<Item label="Thursday" value="4" />
-					<Item label="Friday" value="5" />
-					<Item label="Saturday" value="6" />
-					<Item label="Sunday" value="7" />
-				</Value>
-				<Value type="byte" genre="user" instance="1" index="1" label="Hour" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="17" />
-				<Value type="byte" genre="user" instance="1" index="2" label="Minute" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="55" />
-			</CommandClass>
-			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Associations num_groups="3">
-					<Group index="1" max_associations="5" label="Group 1" auto="true">
-						<Node id="1" />
-					</Group>
-					<Group index="2" max_associations="5" label="Group 2" auto="false" />
-					<Group index="3" max_associations="5" label="Group 3" auto="false" />
-				</Associations>
-			</CommandClass>
-			<CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="6" />
-				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="4.05" />
-				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.00" />
-			</CommandClass>
-			<CommandClass id="143" name="COMMAND_CLASS_MULTI_CMD" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-			</CommandClass>
-		</CommandClasses>
-	</Node>
-	<Node id="3" name="downstairs_thermostat" location="" basic="4" generic="8" specific="6" roletype="5" devicetype="4608" nodetype="0" type="General Thermostat V2" listening="true" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Complete">
-		<Manufacturer id="14f" name="Linear">
-			<Product type="5442" id="5436" name="GC-TBZ48 Battery Powered Z-Wave Thermostat" />
-		</Manufacturer>
-		<CommandClasses>
-			<CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="4" mapping="64">
-				<Instance index="1" />
-			</CommandClass>
-			<CommandClass id="43" name="COMMAND_CLASS_SCENE_ACTIVATION" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-			</CommandClass>
-			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="1" innif="true">
-				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="70" />
-				<Value type="decimal" genre="user" instance="1" index="9" label="Barometric Pressure" units="kPa" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="14260633.60" />
-			</CommandClass>
-			<CommandClass id="64" name="COMMAND_CLASS_THERMOSTAT_MODE" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="list" genre="user" instance="1" index="0" label="Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="1" size="1">
-					<Item label="Off" value="0" />
-					<Item label="Heat" value="1" />
-					<Item label="Cool" value="2" />
-					<Item label="Auto" value="3" />
-					<Item label="Aux Heat" value="4" />
-				</Value>
-				<SupportedModes>
-					<Mode index="0" label="Off" />
-					<Mode index="1" label="Heat" />
-					<Mode index="2" label="Cool" />
-					<Mode index="3" label="Auto" />
-					<Mode index="4" label="Aux Heat" />
-				</SupportedModes>
-			</CommandClass>
-			<CommandClass id="66" name="COMMAND_CLASS_THERMOSTAT_OPERATING_STATE" version="1" request_flags="4" innif="true">
-				<Instance index="1" />
-				<Value type="string" genre="user" instance="1" index="0" label="Operating State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Idle" />
-			</CommandClass>
-			<CommandClass id="67" name="COMMAND_CLASS_THERMOSTAT_SETPOINT" version="1" request_flags="4" innif="true" base="0" typeInterpretation="B">
+			<CommandClass id="67" name="COMMAND_CLASS_THERMOSTAT_SETPOINT" version="1" request_flags="4" innif="true" base="0">
 				<Instance index="1" />
 				<Value type="decimal" genre="user" instance="1" index="1" label="Heating 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="70" />
 				<Value type="decimal" genre="user" instance="1" index="2" label="Cooling 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="73" />
@@ -564,8 +275,297 @@
 					<Item label="Saturday" value="6" />
 					<Item label="Sunday" value="7" />
 				</Value>
-				<Value type="byte" genre="user" instance="1" index="1" label="Hour" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
-				<Value type="byte" genre="user" instance="1" index="2" label="Minute" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="25" />
+				<Value type="byte" genre="user" instance="1" index="1" label="Hour" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="9" />
+				<Value type="byte" genre="user" instance="1" index="2" label="Minute" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="6" />
+			</CommandClass>
+			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Associations num_groups="3">
+					<Group index="1" max_associations="5" label="Group 1" auto="true">
+						<Node id="1" />
+					</Group>
+					<Group index="2" max_associations="5" label="Group 2" auto="false" />
+					<Group index="3" max_associations="5" label="Group 3" auto="false" />
+				</Associations>
+			</CommandClass>
+			<CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="6" />
+				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="4.05" />
+				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.00" />
+			</CommandClass>
+			<CommandClass id="143" name="COMMAND_CLASS_MULTI_CMD" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+		</CommandClasses>
+	</Node>
+	<Node id="3" name="downstairs_thermostat" location="" basic="4" generic="8" specific="6" roletype="5" devicetype="4608" nodetype="0" type="General Thermostat V2" listening="true" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Complete">
+		<Manufacturer id="14f" name="Linear">
+			<Product type="5442" id="5436" name="GC-TBZ48 Battery Powered Z-Wave Thermostat" />
+		</Manufacturer>
+		<CommandClasses>
+			<CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="4" mapping="64">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="43" name="COMMAND_CLASS_SCENE_ACTIVATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="1" innif="true">
+				<Instance index="1" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="69" />
+				<Value type="decimal" genre="user" instance="1" index="9" label="Barometric Pressure" units="kPa" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="14260633.60" />
+			</CommandClass>
+			<CommandClass id="64" name="COMMAND_CLASS_THERMOSTAT_MODE" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="user" instance="1" index="0" label="Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="1" size="1">
+					<Item label="Off" value="0" />
+					<Item label="Heat" value="1" />
+					<Item label="Cool" value="2" />
+					<Item label="Auto" value="3" />
+					<Item label="Aux Heat" value="4" />
+				</Value>
+				<SupportedModes>
+					<Mode index="0" label="Off" />
+					<Mode index="1" label="Heat" />
+					<Mode index="2" label="Cool" />
+					<Mode index="3" label="Auto" />
+					<Mode index="4" label="Aux Heat" />
+				</SupportedModes>
+			</CommandClass>
+			<CommandClass id="66" name="COMMAND_CLASS_THERMOSTAT_OPERATING_STATE" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="string" genre="user" instance="1" index="0" label="Operating State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Heating" />
+			</CommandClass>
+			<CommandClass id="67" name="COMMAND_CLASS_THERMOSTAT_SETPOINT" version="1" request_flags="4" innif="true" base="0">
+				<Instance index="1" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Heating 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="70" />
+				<Value type="decimal" genre="user" instance="1" index="2" label="Cooling 1" units="F" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="73" />
+			</CommandClass>
+			<CommandClass id="68" name="COMMAND_CLASS_THERMOSTAT_FAN_MODE" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="user" instance="1" index="0" label="Fan Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Auto Low" value="0" />
+					<Item label="On Low" value="1" />
+				</Value>
+				<SupportedModes>
+					<Mode index="0" label="Auto Low" />
+					<Mode index="1" label="On Low" />
+				</SupportedModes>
+			</CommandClass>
+			<CommandClass id="69" name="COMMAND_CLASS_THERMOSTAT_FAN_STATE" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="string" genre="user" instance="1" index="0" label="Fan State" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="Running" />
+			</CommandClass>
+			<CommandClass id="90" name="COMMAND_CLASS_DEVICE_RESET_LOCALLY" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="94" name="COMMAND_CLASS_ZWAVEPLUS_INFO" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="byte" genre="system" instance="1" index="0" label="ZWave+ Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="1" />
+				<Value type="short" genre="system" instance="1" index="1" label="InstallerIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="4608" />
+				<Value type="short" genre="system" instance="1" index="2" label="UserIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="4608" />
+			</CommandClass>
+			<CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="config" instance="1" index="1" label="System Type" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = Standard, 1 = Heat Pump</Help>
+					<Item label="Standard" value="0" />
+					<Item label="Heat Pump" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="2" label="Fan Type" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = Gas (no fan w/Heat), 1 = Electric (Fan w/Heat)</Help>
+					<Item label="Gas" value="0" />
+					<Item label="Electric" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="3" label="Change Over Type" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = w/Cool, 1 = w/Heat</Help>
+					<Item label="w/Cool" value="0" />
+					<Item label="w/Heat" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="4" label="2nd Stage Heat Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = no 2nd stage heat, 1 = 2nd stage heat</Help>
+					<Item label="w/Cool" value="0" />
+					<Item label="w/Heat" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="5" label="Aux Heat Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = no aux heat, 1 = aux heat enabled</Help>
+					<Item label="Disabled" value="0" />
+					<Item label="Enabled" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="6" label="2nd Stage Cool Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = no 2nd stage cool, 1 = 2nd stage cool</Help>
+					<Item label="Disabled" value="0" />
+					<Item label="Enabled" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="7" label="Temperature Unit" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="1" size="1">
+					<Help>0 = Celsius, 1 = Fahrenheit</Help>
+					<Item label="Celsius" value="0" />
+					<Item label="Fahrenheit" value="1" />
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="8" label="Minimum Off Time" units="minutes" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="5" max="9" value="5">
+					<Help>Sets the Minimum Off Time (MOT) delay before another heating/cooling cycle can begin</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="9" label="Minimum Run Time" units="minutes" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="9" value="3">
+					<Help>Sets the Minimum Run Time (MRT) delay before a heating/cooling cycle can turn of</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="10" label="Setpoint H/C Delta" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="15" value="3">
+					<Help>Sets the minimum separation between heating and cooling setpoints</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="11" label="H Delta Stage 1 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="6" value="1">
+					<Help>Sets the delta from setpoint that stage 1 heating starts</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="12" label="H Delta Stage 1 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="5" value="0">
+					<Help>Sets the delta from setpoint that stage 1 heating stops</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="13" label="H Delta Stage 2 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="2" max="7" value="2">
+					<Help>Sets the delta from setpoint that stage 2 heating starts</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="14" label="H Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="6" value="0">
+					<Help>Sets the delay from setpoint that stage 2 heating stops</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="15" label="H Delta Aux ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="8" value="3">
+					<Help>Sets the delta from setpoint that stage 3 heating starts</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="16" label="H Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="7" value="0">
+					<Help>Sets the delta from setpoint that stage 3 heating stops</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="17" label="C Delta Stage 1 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="6" value="1">
+					<Help>Sets the delta from setpoint that stage 1 cooling starts</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="18" label="C Delta Stage 1 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="5" value="0">
+					<Help>Sets the delta from setpoint that stage 1 cooling stops</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="19" label="C Delta Stage 2 ON" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="2" max="7" value="2">
+					<Help>Sets the delta from setpoint that stage 2 cooling starts</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="20" label="C Delta Stage 2 OFF" units="fahrenheit" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="6" value="0">
+					<Help>Sets the delta from setpoint that stage 2 cooling stops</Help>
+				</Value>
+				<Value type="list" genre="config" instance="1" index="24" label="Display Lock" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="1" vindex="0" size="1">
+					<Help>Display Lock</Help>
+					<Item label="Unlocked" value="0" />
+					<Item label="Locked" value="1" />
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="26" label="Backlight Timer" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="10" max="30" value="20">
+					<Help>Sets the time from last button press that the backlight will turn OFF</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="33" label="Max Heat Setpoint" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="30" max="109" value="90">
+					<Help>Sets the maximum heating setpoint value</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="34" label="Min Cool Setpoint" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="33" max="112" value="61">
+					<Help>Sets the minimum cooling setpoint value</Help>
+				</Value>
+				<Value type="list" genre="config" instance="1" index="38" label="Schedule Enable" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>Enable or disable thermostat&apos;s local scheduler</Help>
+					<Item label="Disabled" value="0" />
+					<Item label="Enabled" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="39" label="Run/Hold Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>0 = Hold, 1 = Run</Help>
+					<Item label="Hold" value="0" />
+					<Item label="Run" value="1" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="40" label="Setback Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
+					<Help>0 = No setback, 2 = Un-occupied mode</Help>
+					<Item label="No Setback" value="0" />
+					<Item label="Unoccupied Mode" value="2" />
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="41" label="Un-Occupied HSP" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="30" max="109" value="62">
+					<Help>Heat Setpoint for Unoccupied mode</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="42" label="Un-Occupied CSP" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="33" max="112" value="80">
+					<Help>Cool Setpoint for Unoccupied mode</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="43" label="Remote Sensor 1 Node Number" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="252" value="0">
+					<Help>Node number for Remote Sensor 1</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="46" label="Remote Sensor 1 Temperature" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="112" value="52">
+					<Help>Temperature of Remote Sensor 1</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="48" label="Internal Sensor Temp Offset" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-7" max="7" value="0">
+					<Help>Internal Sensor Temperature Offset</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="49" label="R1 Sensor Temp Offset" units="degrees" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-7" max="7" value="0">
+					<Help>R1 Sensor Temperature Offset</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="52" label="Filter Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="4000">
+					<Help>Timer to let know when to change or clean the filter</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="53" label="Max Filter Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="44">
+					<Help>Maximum allowed value for filter timer</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="54" label="Heat Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="0">
+					<Help>Heat Timer in hours</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="55" label="Cool Timer" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="4000" value="0">
+					<Help>Cool Timer in hours</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="61" label="Fan Purge Heat" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="90" value="0">
+					<Help>Fan purge period for Heat mode</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="62" label="Fan Purge Cool" units="hours" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="90" value="0">
+					<Help>Fan purge period for Cool mode</Help>
+				</Value>
+			</CommandClass>
+			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="115" name="COMMAND_CLASS_POWERLEVEL" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="system" instance="1" index="0" label="Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Normal" value="0" />
+					<Item label="-1dB" value="1" />
+					<Item label="-2dB" value="2" />
+					<Item label="-3dB" value="3" />
+					<Item label="-4dB" value="4" />
+					<Item label="-5dB" value="5" />
+					<Item label="-6dB" value="6" />
+					<Item label="-7dB" value="7" />
+					<Item label="-8dB" value="8" />
+					<Item label="-9dB" value="9" />
+				</Value>
+				<Value type="byte" genre="system" instance="1" index="1" label="Timeout" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="button" genre="system" instance="1" index="2" label="Set Powerlevel" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="byte" genre="system" instance="1" index="3" label="Test Node" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="list" genre="system" instance="1" index="4" label="Test Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Normal" value="0" />
+					<Item label="-1dB" value="1" />
+					<Item label="-2dB" value="2" />
+					<Item label="-3dB" value="3" />
+					<Item label="-4dB" value="4" />
+					<Item label="-5dB" value="5" />
+					<Item label="-6dB" value="6" />
+					<Item label="-7dB" value="7" />
+					<Item label="-8dB" value="8" />
+					<Item label="-9dB" value="9" />
+				</Value>
+				<Value type="short" genre="system" instance="1" index="5" label="Frame Count" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
+				<Value type="button" genre="system" instance="1" index="6" label="Test" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="button" genre="system" instance="1" index="7" label="Report" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="list" genre="system" instance="1" index="8" label="Test Status" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Failed" value="0" />
+					<Item label="Success" value="1" />
+					<Item label="In Progress" value="2" />
+				</Value>
+				<Value type="short" genre="system" instance="1" index="9" label="Acked Frames" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
+			</CommandClass>
+			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="100" />
+			</CommandClass>
+			<CommandClass id="129" name="COMMAND_CLASS_CLOCK" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="user" instance="1" index="0" label="Day" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Monday" value="1" />
+					<Item label="Tuesday" value="2" />
+					<Item label="Wednesday" value="3" />
+					<Item label="Thursday" value="4" />
+					<Item label="Friday" value="5" />
+					<Item label="Saturday" value="6" />
+					<Item label="Sunday" value="7" />
+				</Value>
+				<Value type="byte" genre="user" instance="1" index="1" label="Hour" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="9" />
+				<Value type="byte" genre="user" instance="1" index="2" label="Minute" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="6" />
 			</CommandClass>
 			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
 				<Instance index="1" />

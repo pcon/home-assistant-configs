@@ -4,7 +4,16 @@
       friendly_name: "State"
       value_template: >
         {% if states.climate.downstairs_thermostat_cooling_1 %}
-          {{ states.climate.downstairs_thermostat_cooling_1.attributes.operating_state }}
+          {{ states("climate.downstairs_thermostat_cooling_1") | capitalize }}
         {% else %}
           Loading
+        {% endif %}
+    thermostat_downstairs_temp:
+      friendly_name: "Downstairs Set Temp"
+      unit_of_measurement: '°F'
+      value_template: >
+        {% if is_state("climate.downstairs_thermostat_cooling_1", "heat") %}
+          {{ state_attr("climate.downstairs_thermostat_heating_1", "temperature") }}
+        {% else %}
+          {{ state_attr("climate.downstairs_thermostat_cooling_1", "temperature") }}
         {% endif %}
