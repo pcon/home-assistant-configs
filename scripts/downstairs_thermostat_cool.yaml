@@ -1,12 +1,7 @@
 alias: "Set downstairs to cool 70"
 sequence:
-  - service: climate.set_operation_mode
-    data:
-       entity_id: climate.downstairs_thermostat_cooling_1
-       operation_mode: cool
-  - delay:
-      seconds: 5
   - service: climate.set_temperature
     data:
        entity_id: climate.downstairs_thermostat_cooling_1
        temperature: 70
+       hvac_mode: cool

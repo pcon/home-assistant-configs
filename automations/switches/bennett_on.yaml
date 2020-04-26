@@ -1,7 +1,7 @@
 alias: "Bennett's Room - On"
 trigger:
   - platform: template
-    value_template: "{{ states('sensor.time') == (states.input_datetime.bennett_bedtime.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+    value_template: "{{ states('sensor.time') == (state_attr('input_datetime.bennett_bedtime', 'timestamp') | int | timestamp_custom('%H:%M', False)) }}"
 condition:
   - condition: state
     entity_id: input_boolean.vacation_mode

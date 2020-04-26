@@ -1,5 +1,0 @@
-- platform: rest
-  resource: !secret wakedispatch_latest
-  name: wakedispatch_lastupdate
-  value_template: '{{ ((as_timestamp(now()) - value_json.features[0].properties.time / 1000) / 60) | round(0) }}'
-  unit_of_measurement: Hours

@@ -73,6 +73,7 @@ sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
 tplink: !include tplink.yaml
 weather: !include weather.yaml
+calendar: !include calendars.yaml
 
 hangouts:
   intents: !include_dir_merge_named hangouts

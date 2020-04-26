@@ -1,12 +1,7 @@
 alias: "Set upstairs to heat 69"
 sequence:
-  - service: climate.set_operation_mode
-    data:
-       entity_id: climate.upstairs_thermostat_heating_1
-       operation_mode: heat
-  - delay:
-      seconds: 5
   - service: climate.set_temperature
     data:
        entity_id: climate.upstairs_thermostat_heating_1
        temperature: 69
+       hvac_mode: heat

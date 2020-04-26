@@ -1,0 +1,15 @@
+- platform: cert_expiry
+  host: plex.deadlypenguin.com
+- platform: cert_expiry
+  host: nas.deadlypenguin.com
+  port: 5101
+- platform: cert_expiry
+  host: radarr.deadlypenguin.com
+- platform: cert_expiry
+  host: sonarr.deadlypenguin.com
+- platform: cert_expiry
+  host: lidarr.deadlypenguin.com
+- platform: cert_expiry
+  host: library.deadlypenguin.com
+- platform: cert_expiry
+  host: assist.deadlypenguin.com

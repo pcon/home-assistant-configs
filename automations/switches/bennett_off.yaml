@@ -1,7 +1,7 @@
 alias: "Bennett's Room - Off"
 trigger:
   - platform: template
-    value_template: "{{ states('sensor.time') == (states.input_datetime.bennett_wakeup.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+    value_template: "{{ states('sensor.time') == (state_attr('input_datetime.bennett_wakeup', 'timestamp') | int | timestamp_custom('%H:%M', False)) }}"
 action:
   - service: scene.turn_on
     entity_id: scene.bennett_s_room_off

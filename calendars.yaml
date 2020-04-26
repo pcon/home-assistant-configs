@@ -1,0 +1,5 @@
+- platform: todoist
+  token: !secret todoist_api
+  custom_projects:
+          - name: 'Server'
+            due_date_days: 7

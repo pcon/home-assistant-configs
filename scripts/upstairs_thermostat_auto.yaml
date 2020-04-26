@@ -1,18 +1,8 @@
 alias: "Turn upstairs to auto"
 sequence:
-  - service: climate.set_operation_mode
-    data:
-      entity_id: climate.upstairs_thermostat_cooling_1
-      operation_mode: auto
-  - delay:
-      seconds: 5
   - service: climate.set_temperature
     data:
       entity_id: climate.upstairs_thermostat_cooling_1
-      temperature: 72
-  - delay:
-      seconds: 5
-  - service: climate.set_temperature
-    data:
-      entity_id: climate.upstairs_thermostat_heating_1
-      temperature: 69
+      target_temp_high: 70
+      target_temp_low: 60
+      hvac_mode: auto
