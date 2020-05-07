@@ -1,0 +1,10 @@
+type: button
+name: Cast To Office
+tap_action:
+        action: call-service
+        service: cast.show_lovelace_view
+        service_data:
+                dashboard_path: default
+                entity_id: media_player.office_display
+                view_path: default
+

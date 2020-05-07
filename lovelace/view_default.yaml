@@ -1,7 +1,9 @@
 title: default_view
 id: default
+path: default
 icon: mdi:home
 cards:
+  - !include cast.yaml
   - !include people.yaml
   - !include weather.yaml
   - !include freezer.yaml
