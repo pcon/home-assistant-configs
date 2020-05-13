@@ -4,7 +4,7 @@ trigger:
     value_template: "{{ states('sensor.time') == (state_attr('input_datetime.bennett_bedtime', 'timestamp') | int | timestamp_custom('%H:%M', False)) }}"
 condition:
   - condition: state
-    entity_id: input_boolean.vacation_mode
+    entity_id: input_boolean.vacation_mode_2
     state: 'off'
 action:
   - service: scene.turn_on

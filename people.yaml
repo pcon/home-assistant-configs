@@ -3,6 +3,7 @@
   device_trackers:
     - device_tracker.pcon_phone
     - device_tracker.192_168_1_95_48_60_5f_f6_48_53
+    - device_tracker.pcon_phone_2
 - name: Beth
   id: beth
   device_trackers:
