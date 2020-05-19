@@ -1,0 +1,10 @@
+type: custom:vertical-stack-in-card
+title: Fridge
+show_header_toggle: false
+cards:
+  - type: sensor
+    entity: sensor.fridge_temp
+    name: Fridge
+    graph: line
+    unit: F
+    icon: mdi:snowflake

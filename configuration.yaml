@@ -42,6 +42,9 @@ mqtt:
 
 zwave:
   usb_path: /dev/ttyACM0
+zha:
+  usb_path: /dev/ttyACM1
+  radio_type: deconz
 
 system_health:
 owntracks:

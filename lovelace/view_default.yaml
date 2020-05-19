@@ -6,6 +6,7 @@ cards:
   - !include cast.yaml
   - !include people.yaml
   - !include weather.yaml
+  - !include fridge.yaml
   - !include freezer.yaml
   - !include bennett.yaml
   - !include exterior.yaml
